@@ -8,9 +8,9 @@
     <Compile Include="**/*.php" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Peachpie.Blazor" Version="1.0.0-alpha" />
+    <Content Include="wwwroot\**" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="wwwroot\**" />
+    <ProjectReference Include="..\..\..\Peachpie.Blazor\Peachpie.Blazor\Peachpie.Blazor.csproj" />
   </ItemGroup>
 </Project>

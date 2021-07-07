@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desktop", "Desktop\Desktop.
 EndProject
 Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "PHPScripts", "PHPScripts\PHPScripts.msbuildproj", "{4CB375AF-88FA-499D-9BE7-13E717CA6CA3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Peachpie.Blazor", "..\..\Peachpie.Blazor\Peachpie.Blazor\Peachpie.Blazor.csproj", "{C359F3D3-D404-4BF1-8B42-2524A337A026}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{4CB375AF-88FA-499D-9BE7-13E717CA6CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CB375AF-88FA-499D-9BE7-13E717CA6CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CB375AF-88FA-499D-9BE7-13E717CA6CA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C359F3D3-D404-4BF1-8B42-2524A337A026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C359F3D3-D404-4BF1-8B42-2524A337A026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C359F3D3-D404-4BF1-8B42-2524A337A026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C359F3D3-D404-4BF1-8B42-2524A337A026}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

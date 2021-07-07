@@ -7,11 +7,13 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.3" PrivateAssets="all" />
-    <PackageReference Include="Peachpie.Blazor" Version="1.0.0-alpha" />
     <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="**/*.php;" />
     <Content Include="**/*" Exclude="**/*.php;obj/*;bin/**;" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Peachpie.Blazor\Peachpie.Blazor\Peachpie.Blazor.csproj" />
   </ItemGroup>
 </Project>

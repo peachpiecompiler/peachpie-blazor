@@ -19,7 +19,7 @@ namespace BlazorApp.Client
             builder.RootComponents.Add<App>("#app");
 
             // Configure logging
-            builder.Logging.SetMinimumLevel(LogLevel.Debug); // Debug does not work
+            builder.Logging.SetMinimumLevel(LogLevel.None); // Debug does not work
 
             builder.AddPhp(new[] { typeof(force).Assembly });
 

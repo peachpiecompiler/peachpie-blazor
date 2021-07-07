@@ -5,9 +5,9 @@
     <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Peachpie.Blazor" Version="1.0.0-alpha" />
+    <Compile Include="**/*.php" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="**/*.php" />
+    <ProjectReference Include="..\..\..\Peachpie.Blazor\Peachpie.Blazor\Peachpie.Blazor.csproj" />
   </ItemGroup>
 </Project>

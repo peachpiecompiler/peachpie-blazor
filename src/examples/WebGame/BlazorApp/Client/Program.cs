@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Peachpie.Blazor;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -16,6 +17,9 @@ namespace BlazorApp.Client
         {
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("#app");
+            builder.Logging.SetMinimumLevel(LogLevel.None);
+
+            builder.AddPhp(new[] { typeof(Asteroids.AsteroidsComponent).Assembly });
 
             await builder.Build().RunAsync();
         }
