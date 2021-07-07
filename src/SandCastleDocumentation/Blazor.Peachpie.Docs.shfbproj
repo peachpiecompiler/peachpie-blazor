@@ -17,12 +17,13 @@
     <Name>Documentation</Name>
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Core/.NET Standard/.NET 5.0+</FrameworkVersion>
-    <OutputPath>..\..\docs\generated_library_documentation\</OutputPath>
+    <OutputPath>bin\</OutputPath>
     <HtmlHelpName>Documentation</HtmlHelpName>
     <Language>en-US</Language>
     <DocumentationSources>
       <DocumentationSource sourceFile="..\Peachpie.Blazor\Peachpie.Blazor\bin\Debug\net5.0\Peachpie.Blazor.dll" />
-<DocumentationSource sourceFile="..\Peachpie.Blazor\Peachpie.Blazor\bin\Debug\net5.0\Peachpie.Blazor.xml" /></DocumentationSources>
+      <DocumentationSource sourceFile="..\Peachpie.Blazor\Peachpie.Blazor\bin\Debug\net5.0\Peachpie.Blazor.xml" />
+    </DocumentationSources>
     <PlugInConfigurations>
       <PlugInConfig id="Assembly Binding Redirection" enabled="True" xmlns="">
         <configuration useGAC="false">
@@ -36,7 +37,7 @@
       </PlugInConfig>
     </PlugInConfigurations>
     <HelpFileFormat>Website</HelpFileFormat>
-    <SyntaxFilters>C#</SyntaxFilters>
+    <SyntaxFilters>C#, ASP.NET</SyntaxFilters>
     <PresentationStyle>VS2013</PresentationStyle>
     <CleanIntermediates>True</CleanIntermediates>
     <KeepLogFile>False</KeepLogFile>
