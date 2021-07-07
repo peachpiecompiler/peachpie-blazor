@@ -56,6 +56,9 @@ namespace Peachpie.Blazor
 
         [Inject]
         private INavigationInterception NavigationInterception { get; set; }
+
+        [Inject]
+        public IPHPService PhpService { get; set; }
         #endregion
 
         private RenderHandle _renderHandle;
@@ -64,6 +67,7 @@ namespace Peachpie.Blazor
         private BlazorContext _ctx;
         private bool _disposed = false;
         private bool _firstRendering = true;
+        PHPModule _module;
 
         #region IComponent
         void IComponent.Attach(RenderHandle renderHandle)
@@ -75,9 +79,12 @@ namespace Peachpie.Blazor
             NavigationManager.LocationChanged += OnLocationChanged;
         }
 
-        Task IComponent.SetParametersAsync(ParameterView parameters)
+        async Task IComponent.SetParametersAsync(ParameterView parameters)
         {
             parameters.SetParameterProperties(this);
+            
+            await PhpService.InitializePHPAsync();
+            _module = PhpService.GetModule();
 
             Log.SetParameters(_logger, _firstRendering, Type, ContextLifetime);
 
@@ -85,10 +92,9 @@ namespace Peachpie.Blazor
             {
                 _firstRendering = false;
                 _ctx = BlazorContext.Create(this);
+                _module.SetPHPContext(_ctx);
                 Refresh();
             }
-
-            return Task.CompletedTask;
         }
         #endregion
 
@@ -176,6 +182,7 @@ namespace Peachpie.Blazor
             {
                 _ctx?.Dispose();
                 _ctx = BlazorContext.Create(this);
+                _module.SetPHPContext(_ctx);
             }
 
             Refresh();
@@ -190,7 +197,8 @@ namespace Peachpie.Blazor
                 return NavigationInterception.EnableNavigationInterceptionAsync();
             }
 
-            _ctx.CallJsVoid(JsResource.turnFormsToClient);
+            //_ctx.CallJsVoid(JsResource.turnFormsToClient);
+            _module.TurnFormsToClientSide();
 
             return Task.CompletedTask;
         }

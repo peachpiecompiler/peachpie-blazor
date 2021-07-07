@@ -14,6 +14,7 @@ namespace Peachpie.Blazor
         public static void AddPhp(this WebAssemblyHostBuilder builder, Assembly[] assemblies)
         {
             builder.Services.AddSingleton(new PhpComponentRouteManager(assemblies));
+            builder.Services.AddSingleton<IPHPService, PHPService>();
         }
     }
 }

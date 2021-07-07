@@ -16,19 +16,18 @@ namespace Peachpie.Blazor
     /// </summary>
     public class BlazorContext : Context
     {
-        private DotNetObjectReference<BlazorContext> _objRef;
         private IJSRuntime _js;
         private FileManager _fileManager;
         private ILogger<BlazorContext> _logger;
+        private PHPModule _module;
 
         #region Create
         protected BlazorContext(IServiceProvider services) : base(services)
         {
             Output = BlazorWriter.CreateConsole();
-            _objRef = DotNetObjectReference.Create<BlazorContext>(this);
         }
 
-        public static BlazorContext Create(IJSRuntime js, ILoggerFactory loggerFactory)
+        public static BlazorContext Create(IJSRuntime js, ILoggerFactory loggerFactory, IPHPService phpService)
         {
             var ctx = new BlazorContext(null)
             {
@@ -40,11 +39,10 @@ namespace Peachpie.Blazor
             ctx.InitOutput(null);
             ctx.InitSuperglobals();
             ctx._js = js;
-            ctx._fileManager = new FileManager(ctx, loggerFactory);
+            ctx._module = phpService.GetModule();
+            ctx._fileManager = new FileManager(phpService, loggerFactory);
             ctx._logger = loggerFactory.CreateLogger<BlazorContext>();
             ctx.Output = BlazorWriter.CreateConsole();
-
-            ctx.CallJsVoid("window.php.init", ctx._objRef);
             
             //
             ctx.AutoloadFiles();
@@ -53,7 +51,7 @@ namespace Peachpie.Blazor
             return ctx;
         }
 
-        public static BlazorContext Create(PhpScriptProvider component) => Create(component.Js, component.LoggerFactory);
+        public static BlazorContext Create(PhpScriptProvider component) => Create(component.Js, component.LoggerFactory, component.PhpService);
         #endregion
 
         #region Rendering
@@ -95,9 +93,9 @@ namespace Peachpie.Blazor
         /// </summary>
         public void SetPost()
         {
-            if (CallJs<bool>(JsResource.IsPost))
+            if (_module.IsPostRequest())
             {
-                var postData = CallJs<Dictionary<string, string>>(JsResource.getPost);
+                var postData = _module.GetPostData();
                 Log.PrintPost(_logger, postData);
 
                 foreach (var item in postData)
@@ -135,7 +133,6 @@ namespace Peachpie.Blazor
         public override void Dispose()
         {
             base.Dispose();
-            _objRef?.Dispose();
         }
 
         /// <summary>

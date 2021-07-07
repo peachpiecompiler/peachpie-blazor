@@ -26,6 +26,9 @@ namespace Peachpie.Blazor
         [Inject]
         public ILoggerFactory LoggerFactory { get; set; }
 
+        [Inject]
+        public IPHPService PhpService { get; set; }
+
         public virtual void Dispose()
         {
             _ctx?.Dispose();
@@ -42,7 +45,7 @@ namespace Peachpie.Blazor
         protected override void OnInitialized()
         {
             base.OnInitialized();
-            _ctx ??= BlazorContext.Create(Js, LoggerFactory);
+            _ctx ??= BlazorContext.Create(Js, LoggerFactory, PhpService);
         }
     }
 }

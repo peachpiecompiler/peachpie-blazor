@@ -9,17 +9,19 @@ namespace Peachpie.Blazor
     /// </summary>
     public class FileManager
     {
-        private BlazorContext _ctx;
-        private List<FormFile> _fetched;
-        private Dictionary<int, string> _downloaded;
+        private PHPModule _module;
         private ILogger<FileManager> _logger;
 
-        public FileManager(BlazorContext ctx, ILoggerFactory factory)
+        private List<FormFile> _fetched;
+        private Dictionary<int, string> _downloaded;
+
+        public FileManager(IPHPService phpService, ILoggerFactory factory)
         {
-            _ctx = ctx;
+            _module = phpService.GetModule();
+            _logger = factory.CreateLogger<FileManager>();
+
             _fetched = new List<FormFile>();
             _downloaded = new Dictionary<int, string>();
-            _logger = factory.CreateLogger<FileManager>();
         }
 
         /// <summary>
@@ -27,9 +29,9 @@ namespace Peachpie.Blazor
         /// </summary>
         public List<FormFile> FetchFiles()
         {
-            if (_ctx.CallJs<bool>(JsResource.IsFiles))
+            if (_module.isFilesPresented())
             {
-                var files = _ctx.CallJs<FormFile[]>(JsResource.getFiles);
+                var files = _module.GetFiles();
                 foreach (var file in files)
                 {
                     _fetched.Add(file);
@@ -50,7 +52,7 @@ namespace Peachpie.Blazor
             foreach (var item in _fetched)
             {
                 Log.DownloadFile(_logger, item);
-                _downloaded.Add(item.id, await _ctx.CallJsAsync<string>(JsResource.getFileContentAsBase64, item.id));
+                _downloaded.Add(item.id, await _module.ReadFileContentAsBase64(item.id));
             }
 
             _fetched = new List<FormFile>();
@@ -66,7 +68,6 @@ namespace Peachpie.Blazor
                 return result;
             else
                 return null;
-        }
-        
+        }   
     }
 }
