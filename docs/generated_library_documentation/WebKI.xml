@@ -73,7 +73,7 @@
   <HelpKINode Title="BlazorContext._fileManager field" Url="html/f502c27c-a550-f883-b34e-412a1c6cc4e8.htm" />
   <HelpKINode Title="BlazorContext._js field" Url="html/ecec0be0-43c1-040f-38d3-453f8e5c69b1.htm" />
   <HelpKINode Title="BlazorContext._logger field" Url="html/962c129f-1334-e2e2-bff7-ca0b60c74dff.htm" />
-  <HelpKINode Title="BlazorContext._objRef field" Url="html/02a01f1c-4c53-d7b7-3120-5b301ad808ff.htm" />
+  <HelpKINode Title="BlazorContext._module field" Url="html/b3a49a7c-ed74-2aa9-6062-61a62f047245.htm" />
   <HelpKINode Title="BlazorWritable interface">
     <HelpKINode Title="BlazorWritable Interface" Url="html/9c8a3a26-73fd-5c69-7965-13beecb249d8.htm" />
     <HelpKINode Title="methods" Url="html/6134bd0e-a2fa-5f38-2fc0-7f19c246db32.htm" />
@@ -154,12 +154,19 @@
   </HelpKINode>
   <HelpKINode Title="ContextLifetime property" Url="html/c8dc7ddd-24b5-df5a-d427-5063e3101c90.htm" />
   <HelpKINode Title="Create method" Url="html/117fe2c6-f7d7-9412-009d-925119c4e9a2.htm" />
+  <HelpKINode Title="CreateAsync method" Url="html/a9396a4a-7364-b1b9-62ff-43f7e8311f09.htm" />
   <HelpKINode Title="CreateConsole method" Url="html/1840a4e9-46c2-1764-e4e7-36db19ac78e1.htm" />
   <HelpKINode Title="createFile field" Url="html/98c468cd-1d21-3112-985d-19690f1a84c3.htm" />
-  <HelpKINode Title="CreateFile method" Url="html/1c79d954-4f38-b599-c5fe-7f26593a2119.htm" />
+  <HelpKINode Title="CreateFile method">
+    <HelpKINode Title="FileUtils.CreateFile Method " Url="html/1c79d954-4f38-b599-c5fe-7f26593a2119.htm" />
+    <HelpKINode Title="PHPModule.CreateFile Method " Url="html/30c7c8b5-3f33-2e5d-1eab-f693dad5f62a.htm" />
+  </HelpKINode>
   <HelpKINode Title="CreateTree method" Url="html/ba663614-cea6-8611-606d-5d04a6724625.htm" />
   <HelpKINode Title="createUrlObject field" Url="html/8250b2b2-744e-3079-8286-e75ab3617b34.htm" />
-  <HelpKINode Title="CreateUrlObject method" Url="html/0753b1d7-ec64-b3ce-c988-2d13507ab3f8.htm" />
+  <HelpKINode Title="CreateUrlObject method">
+    <HelpKINode Title="FileUtils.CreateUrlObject Method " Url="html/0753b1d7-ec64-b3ce-c988-2d13507ab3f8.htm" />
+    <HelpKINode Title="PHPModule.CreateUrlObject Method " Url="html/8ed4ccfd-d0ae-490a-8dec-709521cbbb60.htm" />
+  </HelpKINode>
   <HelpKINode Title="CssBuilder class">
     <HelpKINode Title="CssBuilder Class" Url="html/56d85b4a-99e4-9051-b0f6-63077014e9e2.htm" />
     <HelpKINode Title="constructor" Url="html/2e2ddc39-920d-d153-3a1d-6db2d502052b.htm" />
@@ -179,12 +186,15 @@
     <HelpKINode Title="BlazorWriter.Dispose Method " Url="html/9d4a3ef9-7f85-2bfc-319e-3760e0ff6b4c.htm" />
     <HelpKINode Title="Log.Dispose Method " Url="html/5a1b3448-21dc-7a09-fa67-ae04754b3035.htm" />
     <HelpKINode Title="PhpComponent.Dispose Method " Url="html/9726d576-92d1-0a7c-d6e3-6d2034961bf7.htm" />
+    <HelpKINode Title="PHPModule.Dispose Method " Url="html/f818cd9c-04af-c45a-21c3-1fc983b01292.htm" />
+    <HelpKINode Title="PHPService.Dispose Method " Url="html/b41e0842-d3d2-1e14-2c79-e0485802affe.htm" />
     <HelpKINode Title="Timer.Dispose Method " Url="html/abc5b41e-2592-6027-801d-9cf0ca35dd9a.htm" />
   </HelpKINode>
   <HelpKINode Title="downloadFile field" Url="html/af0d7d4b-f70e-b525-904c-476c8fb2b3a5.htm" />
   <HelpKINode Title="DownloadFile method">
     <HelpKINode Title="FileUtils.DownloadFile Method " Url="html/b9cc0962-f6d7-762a-672c-2a2005cc7c90.htm" />
     <HelpKINode Title="Log.DownloadFile Method " Url="html/f3990380-911c-9c99-2317-6950b59149e4.htm" />
+    <HelpKINode Title="PHPModule.DownloadFile Method " Url="html/1cafae73-5609-05b1-8730-83861aa0a18e.htm" />
   </HelpKINode>
   <HelpKINode Title="DownloadFilesAsync method" Url="html/f951f22c-f007-a2cc-90f7-34787614300f.htm" />
   <HelpKINode Title="Encoding property" Url="html/1a4d8f07-0012-68e4-c6bc-f82508a4d1b7.htm" />
@@ -201,18 +211,18 @@
   <HelpKINode Title="fieldName property" Url="html/c4a3cc4d-81a7-ec6c-25f5-79fdf65d2db7.htm" />
   <HelpKINode Title="FileManager class">
     <HelpKINode Title="FileManager Class" Url="html/4364e3bb-0312-bc6f-0731-fd269f858f62.htm" />
-    <HelpKINode Title="constructor" Url="html/bd7f2b52-a29b-ceda-d69a-84eb53ca8fd1.htm" />
+    <HelpKINode Title="constructor" Url="html/15b66901-e40b-2aed-7485-e4b1dda867c0.htm" />
     <HelpKINode Title="fields" Url="html/e888e216-56d4-12f1-aa83-e82fd36b765f.htm" />
     <HelpKINode Title="methods" Url="html/08d9f02f-9814-2694-b795-2c1a104c8307.htm" />
   </HelpKINode>
   <HelpKINode Title="FileManager.DownloadFilesAsync method" Url="html/f951f22c-f007-a2cc-90f7-34787614300f.htm" />
   <HelpKINode Title="FileManager.FetchFiles method" Url="html/d9c921d1-b383-1173-a007-ff7cb80bc290.htm" />
-  <HelpKINode Title="FileManager.FileManager constructor" Url="html/bd7f2b52-a29b-ceda-d69a-84eb53ca8fd1.htm" />
+  <HelpKINode Title="FileManager.FileManager constructor" Url="html/15b66901-e40b-2aed-7485-e4b1dda867c0.htm" />
   <HelpKINode Title="FileManager.GetFileData method" Url="html/8dca3263-9ed0-75c5-89f6-60e218b64a8e.htm" />
-  <HelpKINode Title="FileManager._ctx field" Url="html/04b980d9-61af-6147-0052-a866d5b124c6.htm" />
   <HelpKINode Title="FileManager._downloaded field" Url="html/fac35f0a-1e4f-4de0-938e-63ff5f7a09df.htm" />
   <HelpKINode Title="FileManager._fetched field" Url="html/84ea8c0d-e381-e647-8598-771423833d01.htm" />
   <HelpKINode Title="FileManager._logger field" Url="html/708ff355-0d79-6233-ae9f-9fdd86f1a135.htm" />
+  <HelpKINode Title="FileManager._module field" Url="html/99f86a56-af48-85c2-6c2e-d1c8c82d142f.htm" />
   <HelpKINode Title="FileUtils class">
     <HelpKINode Title="FileUtils Class" Url="html/7a25c2af-35c1-9400-f498-16cc7758cc55.htm" />
     <HelpKINode Title="methods" Url="html/248fc82a-7cec-dd31-dd74-865fd52094cb.htm" />
@@ -242,7 +252,13 @@
   <HelpKINode Title="getFileContentAsBase64 field" Url="html/e391613a-2490-09d8-63ec-58228cf36fad.htm" />
   <HelpKINode Title="GetFileData method" Url="html/8dca3263-9ed0-75c5-89f6-60e218b64a8e.htm" />
   <HelpKINode Title="getFiles field" Url="html/7f707f53-ad73-399c-1503-4591ce96be9c.htm" />
+  <HelpKINode Title="GetFiles method" Url="html/2b222150-0b84-7b10-a1a1-f3b9adcc2a18.htm" />
+  <HelpKINode Title="GetModule method">
+    <HelpKINode Title="IPHPService.GetModule Method " Url="html/4e392b31-0bc3-3683-096d-cc7338a853ab.htm" />
+    <HelpKINode Title="PHPService.GetModule Method " Url="html/1bcf3476-6f89-4872-5e54-927004a24585.htm" />
+  </HelpKINode>
   <HelpKINode Title="getPost field" Url="html/bdc4c634-ac63-330f-4c55-e5e16c933418.htm" />
+  <HelpKINode Title="GetPostData method" Url="html/10e3ccba-4c33-6a60-cece-d80d7d1862c6.htm" />
   <HelpKINode Title="Handler field" Url="html/2a8157a9-ba24-df7d-92f4-d2961e1a7f47.htm" />
   <HelpKINode Title="Handler property" Url="html/1de22cd6-2a2c-1b18-08e1-334bb6e3ebbe.htm" />
   <HelpKINode Title="IApplicationBuilderExtensions class">
@@ -255,15 +271,28 @@
   <HelpKINode Title="id property" Url="html/8c44304e-039e-3332-9343-b0a56991c300.htm" />
   <HelpKINode Title="IDisposable.Dispose explicitly implemented method" Url="html/0e3cc136-0087-5358-ef3b-803ac0c6a36b.htm" />
   <HelpKINode Title="IHandleAfterRender.OnAfterRenderAsync explicitly implemented method" Url="html/79748d07-8c3b-3116-ee0f-060fa3a02819.htm" />
+  <HelpKINode Title="Initialize method" Url="html/253afe8e-1bf1-d10e-22be-b4fb66654866.htm" />
+  <HelpKINode Title="InitializePHPAsync method">
+    <HelpKINode Title="IPHPService.InitializePHPAsync Method " Url="html/ea2ae6a2-92f1-7229-3716-5745b538be8f.htm" />
+    <HelpKINode Title="PHPService.InitializePHPAsync Method " Url="html/11482d2c-78be-4581-0ac1-a3737662061f.htm" />
+  </HelpKINode>
   <HelpKINode Title="InteropUtils class">
     <HelpKINode Title="InteropUtils Class" Url="html/2eb87aec-a43f-4ccc-ad0c-e8ed76041f01.htm" />
     <HelpKINode Title="methods" Url="html/64c43d67-dad8-dc0b-bf8a-92cf7fe6236c.htm" />
   </HelpKINode>
   <HelpKINode Title="InteropUtils.CallJsVoid method" Url="html/6fdf4e91-be52-cef8-f19b-17f19809fe47.htm" />
   <HelpKINode Title="InteropUtils.CallJsVoidAsync method" Url="html/03daa401-fb46-f6a9-4db4-2ff33b284912.htm" />
+  <HelpKINode Title="IPHPService interface">
+    <HelpKINode Title="IPHPService Interface" Url="html/844c6e1f-cb4b-457b-38ea-9e65538314f9.htm" />
+    <HelpKINode Title="methods" Url="html/607a84c4-8ad8-c532-0eeb-7fa392f3d7d0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IPHPService.GetModule method" Url="html/4e392b31-0bc3-3683-096d-cc7338a853ab.htm" />
+  <HelpKINode Title="IPHPService.InitializePHPAsync method" Url="html/ea2ae6a2-92f1-7229-3716-5745b538be8f.htm" />
   <HelpKINode Title="IsFiles field" Url="html/ecddba59-1193-534c-f482-e22360e24563.htm" />
+  <HelpKINode Title="isFilesPresented method" Url="html/0d984cd5-43d8-b5a9-a660-81e4aa3e4166.htm" />
   <HelpKINode Title="IsMatch property" Url="html/4a19cda8-207d-7a0c-4b55-bb69e9057875.htm" />
   <HelpKINode Title="IsPost field" Url="html/988af61d-4978-5215-437f-dbea4a1fc87c.htm" />
+  <HelpKINode Title="IsPostRequest method" Url="html/6c920949-977b-7dc2-a792-ea60e0a7ba42.htm" />
   <HelpKINode Title="Js property">
     <HelpKINode Title="PhpComponent.Js Property " Url="html/b42ec10e-a092-d31b-9a85-9ea2384af6a7.htm" />
     <HelpKINode Title="PhpScriptProvider.Js Property " Url="html/10edfd9f-6e23-1e07-6677-96d56acff1d2.htm" />
@@ -378,13 +407,16 @@
   <HelpKINode Title="Peachpie.Blazor.GenericHelper class" Url="html/5b908e75-9d32-9881-7462-b3bbaa9e7f9c.htm" />
   <HelpKINode Title="Peachpie.Blazor.IApplicationBuilderExtensions class" Url="html/69ab04a2-0110-291f-37d7-f015cedd79bd.htm" />
   <HelpKINode Title="Peachpie.Blazor.InteropUtils class" Url="html/2eb87aec-a43f-4ccc-ad0c-e8ed76041f01.htm" />
+  <HelpKINode Title="Peachpie.Blazor.IPHPService interface" Url="html/844c6e1f-cb4b-457b-38ea-9e65538314f9.htm" />
   <HelpKINode Title="Peachpie.Blazor.JsResource class" Url="html/b8b50bb3-4509-fa0f-a0b4-758757f7b067.htm" />
   <HelpKINode Title="Peachpie.Blazor.Log class" Url="html/f1aca1bd-0bf9-b70a-4441-d81c025695af.htm" />
   <HelpKINode Title="Peachpie.Blazor.MatchResult class" Url="html/359cea19-f4a5-04c4-d42c-0e78a6b5238a.htm" />
   <HelpKINode Title="Peachpie.Blazor.PhpComponent class" Url="html/e15bf912-0b3c-c0fb-c103-90fdfa4cf141.htm" />
   <HelpKINode Title="Peachpie.Blazor.PhpComponentRouteManager class" Url="html/245596c8-b440-599b-c2b0-55475aee0d46.htm" />
+  <HelpKINode Title="Peachpie.Blazor.PHPModule class" Url="html/a74b72ff-6967-c8f8-98f4-652fc5adedf5.htm" />
   <HelpKINode Title="Peachpie.Blazor.PhpScriptProvider class" Url="html/0ecbfd85-ef5b-4754-23cb-49d3d074cf18.htm" />
   <HelpKINode Title="Peachpie.Blazor.PhpScriptProviderType enumeration" Url="html/b3d7777d-886f-4559-5f43-1e86eff3a250.htm" />
+  <HelpKINode Title="Peachpie.Blazor.PHPService class" Url="html/5964ee52-bd5a-8336-7883-4218afa3af7c.htm" />
   <HelpKINode Title="Peachpie.Blazor.PhpTreeBuilder class" Url="html/140bc2a8-2a41-0774-5745-85190b5edcc7.htm" />
   <HelpKINode Title="Peachpie.Blazor.Route class" Url="html/7985ed87-9297-3b4f-34eb-6030ea112c1f.htm" />
   <HelpKINode Title="Peachpie.Blazor.RouteData structure" Url="html/652784b2-3ee6-fda9-855f-5698c5db0dba.htm" />
@@ -409,6 +441,7 @@
   <HelpKINode Title="PhpComponent.LoggerFactory property" Url="html/da173979-cf93-24fc-8314-81a74f8486d3.htm" />
   <HelpKINode Title="PhpComponent.OnInitialized method" Url="html/a00fa146-f542-23f8-788a-e55f631a10c8.htm" />
   <HelpKINode Title="PhpComponent.PhpComponent constructor" Url="html/0a443cf6-617e-29b8-edc5-3729b50eca69.htm" />
+  <HelpKINode Title="PhpComponent.PhpService property" Url="html/f4841cdc-1907-fb37-1b48-cf31e7240d02.htm" />
   <HelpKINode Title="PhpComponent._ctx field" Url="html/a294004c-71fe-9529-c4db-98a609e8dd49.htm" />
   <HelpKINode Title="PhpComponentRouteManager class">
     <HelpKINode Title="PhpComponentRouteManager Class" Url="html/245596c8-b440-599b-c2b0-55475aee0d46.htm" />
@@ -419,6 +452,42 @@
   <HelpKINode Title="PhpComponentRouteManager.Match method" Url="html/9f31f24e-17f1-d778-315f-adb719f6c9ff.htm" />
   <HelpKINode Title="PhpComponentRouteManager.PhpComponentRouteManager constructor" Url="html/9031ba19-497e-3668-d854-72068cce37ea.htm" />
   <HelpKINode Title="PhpComponentRouteManager.Routes property" Url="html/6daf62a6-dd54-8201-0a9d-a1b4cd9143dd.htm" />
+  <HelpKINode Title="PHPModule class">
+    <HelpKINode Title="PHPModule Class" Url="html/a74b72ff-6967-c8f8-98f4-652fc5adedf5.htm" />
+    <HelpKINode Title="constructor" Url="html/d53534e0-02f3-f131-dafe-80e95315909a.htm" />
+    <HelpKINode Title="fields" Url="html/8cd0d91f-8b91-d8f4-21df-aa103c6a95f1.htm" />
+    <HelpKINode Title="methods" Url="html/506fc075-68cc-8b3f-fbe2-3a7e9ca6dd88.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PHPModule.CreateAsync method" Url="html/a9396a4a-7364-b1b9-62ff-43f7e8311f09.htm" />
+  <HelpKINode Title="PHPModule.CreateFile method" Url="html/30c7c8b5-3f33-2e5d-1eab-f693dad5f62a.htm" />
+  <HelpKINode Title="PHPModule.CreateUrlObject method" Url="html/8ed4ccfd-d0ae-490a-8dec-709521cbbb60.htm" />
+  <HelpKINode Title="PHPModule.Dispose method" Url="html/f818cd9c-04af-c45a-21c3-1fc983b01292.htm" />
+  <HelpKINode Title="PHPModule.DownloadFile method" Url="html/1cafae73-5609-05b1-8730-83861aa0a18e.htm" />
+  <HelpKINode Title="PHPModule.GetFiles method" Url="html/2b222150-0b84-7b10-a1a1-f3b9adcc2a18.htm" />
+  <HelpKINode Title="PHPModule.GetPostData method" Url="html/10e3ccba-4c33-6a60-cece-d80d7d1862c6.htm" />
+  <HelpKINode Title="PHPModule.Initialize method" Url="html/253afe8e-1bf1-d10e-22be-b4fb66654866.htm" />
+  <HelpKINode Title="PHPModule.isFilesPresented method" Url="html/0d984cd5-43d8-b5a9-a660-81e4aa3e4166.htm" />
+  <HelpKINode Title="PHPModule.IsPostRequest method" Url="html/6c920949-977b-7dc2-a792-ea60e0a7ba42.htm" />
+  <HelpKINode Title="PHPModule.PHPModule constructor" Url="html/d53534e0-02f3-f131-dafe-80e95315909a.htm" />
+  <HelpKINode Title="PHPModule.ReadFileContentAsBase64 method" Url="html/2fed6888-a13f-c79f-05ab-22d17a6024c2.htm" />
+  <HelpKINode Title="PHPModule.SetPHPContext method" Url="html/04aa24ea-386e-5456-91ca-6c9896b7e3ec.htm" />
+  <HelpKINode Title="PHPModule.TurnFormsToClientSide method" Url="html/fb381a72-ca6a-088c-4f79-3bee27fd5ddc.htm" />
+  <HelpKINode Title="PHPModule._changeFormsCommand field" Url="html/26367fe3-39d5-e07d-cb72-70b0279fe63c.htm" />
+  <HelpKINode Title="PHPModule._createFileCommand field" Url="html/47fa62db-0056-b3a4-5cb1-d7df231119ab.htm" />
+  <HelpKINode Title="PHPModule._createUrlObjectCommand field" Url="html/94c56153-a59f-f593-87f8-d33a0d30cc41.htm" />
+  <HelpKINode Title="PHPModule._ctxRef field" Url="html/df6e6ecc-d65d-f7ed-63d0-eb59bdfd1d86.htm" />
+  <HelpKINode Title="PHPModule._downloadFileCommand field" Url="html/8e549987-7f46-efe2-9686-6784387eddd5.htm" />
+  <HelpKINode Title="PHPModule._getfilesCommand field" Url="html/8e78bde9-e9b8-a11b-7fd8-33844732c064.htm" />
+  <HelpKINode Title="PHPModule._getPostDataCommand field" Url="html/0ec35144-d9b5-4de0-6273-131402bd6d51.htm" />
+  <HelpKINode Title="PHPModule._importCommand field" Url="html/4003ddca-4d66-8230-71e4-65837ce437ed.htm" />
+  <HelpKINode Title="PHPModule._initializeCommand field" Url="html/25b365f9-c4a1-77a4-f799-5b471a4a9c8e.htm" />
+  <HelpKINode Title="PHPModule._initialized field" Url="html/e59d7c39-1e2a-a9ed-9fbf-a72ae331e287.htm" />
+  <HelpKINode Title="PHPModule._isFilesPresentedCommand field" Url="html/eed5b1c6-f7e1-b364-b889-12cd0dd27aff.htm" />
+  <HelpKINode Title="PHPModule._isPostRequestedCommand field" Url="html/87eba475-4797-bb54-9496-6d17632009bc.htm" />
+  <HelpKINode Title="PHPModule._modulePath field" Url="html/1c7fc729-2a1a-10a9-07ca-366d56264a2a.htm" />
+  <HelpKINode Title="PHPModule._moduleRef field" Url="html/54314b7d-78c4-dd2a-1aae-b69879c26571.htm" />
+  <HelpKINode Title="PHPModule._readAsBase64Command field" Url="html/7f6aa096-b7d8-b99e-7080-5b9e1c18b57b.htm" />
+  <HelpKINode Title="PHPModule._setPHPContextCommand field" Url="html/cdb9f701-b0c3-be6b-face-0a2e3c2cda3c.htm" />
   <HelpKINode Title="PhpScriptProvider class">
     <HelpKINode Title="PhpScriptProvider Class" Url="html/0ecbfd85-ef5b-4754-23cb-49d3d074cf18.htm" />
     <HelpKINode Title="constructor" Url="html/5e1fc03d-d893-02f5-98e6-6b4b6e8fb5fd.htm" />
@@ -439,6 +508,7 @@
   <HelpKINode Title="PhpScriptProvider.NotFound property" Url="html/8218a6b8-e93c-12b2-ee6a-971809572c30.htm" />
   <HelpKINode Title="PhpScriptProvider.OnLocationChanged method" Url="html/97c9e448-816e-bfa7-cdf1-bcd70ffd5c0e.htm" />
   <HelpKINode Title="PhpScriptProvider.PhpScriptProvider constructor" Url="html/5e1fc03d-d893-02f5-98e6-6b4b6e8fb5fd.htm" />
+  <HelpKINode Title="PhpScriptProvider.PhpService property" Url="html/fde5c23b-23c0-9b29-0158-4bf222c23780.htm" />
   <HelpKINode Title="PhpScriptProvider.Refresh method" Url="html/036b8058-6e70-ae0c-a0a4-2699b55c53f7.htm" />
   <HelpKINode Title="PhpScriptProvider.Render method" Url="html/519a643a-9331-bf6c-db20-da011bb57495.htm" />
   <HelpKINode Title="PhpScriptProvider.RouteManager property" Url="html/e11299cb-e3fa-4ba6-a88a-e78ec9a7b957.htm" />
@@ -448,9 +518,26 @@
   <HelpKINode Title="PhpScriptProvider._disposed field" Url="html/d7454168-5cfb-dada-8067-9fc7d2068160.htm" />
   <HelpKINode Title="PhpScriptProvider._firstRendering field" Url="html/c0608b67-2d8d-a7b7-8712-db752bd3e81c.htm" />
   <HelpKINode Title="PhpScriptProvider._logger field" Url="html/d2d47a06-4c74-2e89-0354-761cbb6d1ec6.htm" />
+  <HelpKINode Title="PhpScriptProvider._module field" Url="html/02139eb8-2e11-a491-fd16-4f922636ebed.htm" />
   <HelpKINode Title="PhpScriptProvider._navigationInterceptionEnabled field" Url="html/dae4c2a0-6093-b13d-c21e-03e4e655a5f9.htm" />
   <HelpKINode Title="PhpScriptProvider._renderHandle field" Url="html/64965fc9-5029-36a0-5a01-eba274a37ae2.htm" />
   <HelpKINode Title="PhpScriptProviderType enumeration" Url="html/b3d7777d-886f-4559-5f43-1e86eff3a250.htm" />
+  <HelpKINode Title="PHPService class">
+    <HelpKINode Title="PHPService Class" Url="html/5964ee52-bd5a-8336-7883-4218afa3af7c.htm" />
+    <HelpKINode Title="constructor" Url="html/b31f253d-ae0c-6411-ac6f-bca8f2f8515f.htm" />
+    <HelpKINode Title="fields" Url="html/5350ae04-f8bb-7258-a036-61a975f79ce8.htm" />
+    <HelpKINode Title="methods" Url="html/b4bbe754-20e3-51d5-1ec3-464cb0f346ed.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PhpService property">
+    <HelpKINode Title="PhpComponent.PhpService Property " Url="html/f4841cdc-1907-fb37-1b48-cf31e7240d02.htm" />
+    <HelpKINode Title="PhpScriptProvider.PhpService Property " Url="html/fde5c23b-23c0-9b29-0158-4bf222c23780.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PHPService.Dispose method" Url="html/b41e0842-d3d2-1e14-2c79-e0485802affe.htm" />
+  <HelpKINode Title="PHPService.GetModule method" Url="html/1bcf3476-6f89-4872-5e54-927004a24585.htm" />
+  <HelpKINode Title="PHPService.InitializePHPAsync method" Url="html/11482d2c-78be-4581-0ac1-a3737662061f.htm" />
+  <HelpKINode Title="PHPService.PHPService constructor" Url="html/b31f253d-ae0c-6411-ac6f-bca8f2f8515f.htm" />
+  <HelpKINode Title="PHPService._jsRuntime field" Url="html/9d956d89-1d02-0ab4-a2f5-95155d26d776.htm" />
+  <HelpKINode Title="PHPService._phpModule field" Url="html/1b4020b2-156c-96f9-f9be-c965bfae0744.htm" />
   <HelpKINode Title="PhpTreeBuilder class">
     <HelpKINode Title="PhpTreeBuilder Class" Url="html/140bc2a8-2a41-0774-5745-85190b5edcc7.htm" />
     <HelpKINode Title="constructor" Url="html/557e642d-ae39-3e88-073e-296e1b22dc2c.htm" />
@@ -481,6 +568,7 @@
   <HelpKINode Title="PrintFiles method" Url="html/80fd1178-8ffc-1ce7-97a4-f258fe2831b2.htm" />
   <HelpKINode Title="PrintGet method" Url="html/0b7a9d89-2554-3b54-aac2-d059f083317b.htm" />
   <HelpKINode Title="PrintPost method" Url="html/f8a5c197-44e6-0a43-c0fa-01a63523bce2.htm" />
+  <HelpKINode Title="ReadFileContentAsBase64 method" Url="html/2fed6888-a13f-c79f-05ab-22d17a6024c2.htm" />
   <HelpKINode Title="Refresh method" Url="html/036b8058-6e70-ae0c-a0a4-2699b55c53f7.htm" />
   <HelpKINode Title="remove method" Url="html/6ca9dda2-a461-9a4f-5b11-c65f2ac716c9.htm" />
   <HelpKINode Title="removeEvent method" Url="html/80c5fa70-c6f4-eab4-e593-cb6cb5e02b01.htm" />
@@ -519,6 +607,7 @@
   <HelpKINode Title="SetFilesAsync method" Url="html/2a1eadda-145f-974b-1a1b-6b2b24e89cc6.htm" />
   <HelpKINode Title="SetGet method" Url="html/e201fc4a-3e2d-e1a0-d342-94045c46a716.htm" />
   <HelpKINode Title="SetParameters method" Url="html/c182d9c1-0966-7640-bed1-1e13969010f1.htm" />
+  <HelpKINode Title="SetPHPContext method" Url="html/04aa24ea-386e-5456-91ca-6c9896b7e3ec.htm" />
   <HelpKINode Title="SetPost method" Url="html/935f5b0d-6b4b-92a3-8f42-59152e809a3e.htm" />
   <HelpKINode Title="size property" Url="html/1858c8d4-73bc-648f-5fb0-f338e0809c2b.htm" />
   <HelpKINode Title="Start method" Url="html/065e8756-55a5-81bc-50cd-d75f783a8ebb.htm" />
@@ -574,6 +663,7 @@
     <HelpKINode Title="Text.ToString Method " Url="html/2029bd22-d782-3c53-0934-8c4b6a1cd7ca.htm" />
   </HelpKINode>
   <HelpKINode Title="turnFormsToClient field" Url="html/4f806006-bb03-1aa9-dd6e-e7c7a9796331.htm" />
+  <HelpKINode Title="TurnFormsToClientSide method" Url="html/fb381a72-ca6a-088c-4f79-3bee27fd5ddc.htm" />
   <HelpKINode Title="Type property" Url="html/29b6ed0a-8da0-ed9c-9176-7c3a54a35692.htm" />
   <HelpKINode Title="type property" Url="html/cdb5c859-4ac2-ea5d-f19d-35108008fe2c.htm" />
   <HelpKINode Title="UriSegments field" Url="html/50128348-4b4b-94b3-6faa-d9f85e4224e6.htm" />
@@ -594,34 +684,55 @@
   <HelpKINode Title="_buffer field" Url="html/f05cf8e0-918e-1411-7db1-590f74248d5e.htm" />
   <HelpKINode Title="_builder field" Url="html/fc0322d4-8dfd-27b3-6a41-0b0d4753c830.htm" />
   <HelpKINode Title="_busyNavigating field" Url="html/38d55766-3c59-0193-0152-eb4621e7a20a.htm" />
+  <HelpKINode Title="_changeFormsCommand field" Url="html/26367fe3-39d5-e07d-cb72-70b0279fe63c.htm" />
   <HelpKINode Title="_classes field" Url="html/aa80dab1-1dfd-061c-021d-a5d9d2b053f1.htm" />
+  <HelpKINode Title="_createFileCommand field" Url="html/47fa62db-0056-b3a4-5cb1-d7df231119ab.htm" />
+  <HelpKINode Title="_createUrlObjectCommand field" Url="html/94c56153-a59f-f593-87f8-d33a0d30cc41.htm" />
   <HelpKINode Title="_ctx field">
-    <HelpKINode Title="FileManager._ctx Field" Url="html/04b980d9-61af-6147-0052-a866d5b124c6.htm" />
     <HelpKINode Title="PhpComponent._ctx Field" Url="html/a294004c-71fe-9529-c4db-98a609e8dd49.htm" />
     <HelpKINode Title="PhpScriptProvider._ctx Field" Url="html/1ddd5d37-b0da-0ac0-d3b1-df972b06e205.htm" />
   </HelpKINode>
+  <HelpKINode Title="_ctxRef field" Url="html/df6e6ecc-d65d-f7ed-63d0-eb59bdfd1d86.htm" />
   <HelpKINode Title="_dictionary field" Url="html/b727f608-7ddf-cd4c-6271-1cb5b2793cdb.htm" />
   <HelpKINode Title="_dispose field" Url="html/be376c4d-6867-bd1f-64cc-b51dc220dcc5.htm" />
   <HelpKINode Title="_disposed field" Url="html/d7454168-5cfb-dada-8067-9fc7d2068160.htm" />
   <HelpKINode Title="_download field" Url="html/4b5af283-46a0-24cc-0390-78aab1d231b7.htm" />
   <HelpKINode Title="_downloaded field" Url="html/fac35f0a-1e4f-4de0-938e-63ff5f7a09df.htm" />
+  <HelpKINode Title="_downloadFileCommand field" Url="html/8e549987-7f46-efe2-9686-6784387eddd5.htm" />
   <HelpKINode Title="_fetched field" Url="html/84ea8c0d-e381-e647-8598-771423833d01.htm" />
   <HelpKINode Title="_fileManager field" Url="html/f502c27c-a550-f883-b34e-412a1c6cc4e8.htm" />
   <HelpKINode Title="_firstRendering field" Url="html/c0608b67-2d8d-a7b7-8712-db752bd3e81c.htm" />
+  <HelpKINode Title="_getfilesCommand field" Url="html/8e78bde9-e9b8-a11b-7fd8-33844732c064.htm" />
+  <HelpKINode Title="_getPostDataCommand field" Url="html/0ec35144-d9b5-4de0-6273-131402bd6d51.htm" />
+  <HelpKINode Title="_importCommand field" Url="html/4003ddca-4d66-8230-71e4-65837ce437ed.htm" />
+  <HelpKINode Title="_initializeCommand field" Url="html/25b365f9-c4a1-77a4-f799-5b471a4a9c8e.htm" />
+  <HelpKINode Title="_initialized field" Url="html/e59d7c39-1e2a-a9ed-9fbf-a72ae331e287.htm" />
+  <HelpKINode Title="_isFilesPresentedCommand field" Url="html/eed5b1c6-f7e1-b364-b889-12cd0dd27aff.htm" />
+  <HelpKINode Title="_isPostRequestedCommand field" Url="html/87eba475-4797-bb54-9496-6d17632009bc.htm" />
   <HelpKINode Title="_js field" Url="html/ecec0be0-43c1-040f-38d3-453f8e5c69b1.htm" />
+  <HelpKINode Title="_jsRuntime field" Url="html/9d956d89-1d02-0ab4-a2f5-95155d26d776.htm" />
   <HelpKINode Title="_logger field">
     <HelpKINode Title="BlazorContext._logger Field" Url="html/962c129f-1334-e2e2-bff7-ca0b60c74dff.htm" />
     <HelpKINode Title="FileManager._logger Field" Url="html/708ff355-0d79-6233-ae9f-9fdd86f1a135.htm" />
     <HelpKINode Title="PhpScriptProvider._logger Field" Url="html/d2d47a06-4c74-2e89-0354-761cbb6d1ec6.htm" />
   </HelpKINode>
+  <HelpKINode Title="_module field">
+    <HelpKINode Title="BlazorContext._module Field" Url="html/b3a49a7c-ed74-2aa9-6062-61a62f047245.htm" />
+    <HelpKINode Title="FileManager._module Field" Url="html/99f86a56-af48-85c2-6c2e-d1c8c82d142f.htm" />
+    <HelpKINode Title="PhpScriptProvider._module Field" Url="html/02139eb8-2e11-a491-fd16-4f922636ebed.htm" />
+  </HelpKINode>
+  <HelpKINode Title="_modulePath field" Url="html/1c7fc729-2a1a-10a9-07ca-366d56264a2a.htm" />
+  <HelpKINode Title="_moduleRef field" Url="html/54314b7d-78c4-dd2a-1aae-b69879c26571.htm" />
   <HelpKINode Title="_navigating field" Url="html/c4ce3593-08cf-388e-2a56-30bb490f9d04.htm" />
   <HelpKINode Title="_navigatingComponent field" Url="html/0e88e65d-50c6-8e22-69b4-086bbe99425b.htm" />
   <HelpKINode Title="_navigatingFailed field" Url="html/2683017e-0836-bf45-c2ea-0372a36a741d.htm" />
   <HelpKINode Title="_navigatingScript field" Url="html/daaece18-3453-518e-55b3-4ea02f760695.htm" />
   <HelpKINode Title="_navigationInterceptionEnabled field" Url="html/dae4c2a0-6093-b13d-c21e-03e4e655a5f9.htm" />
-  <HelpKINode Title="_objRef field" Url="html/02a01f1c-4c53-d7b7-3120-5b301ad808ff.htm" />
+  <HelpKINode Title="_phpModule field" Url="html/1b4020b2-156c-96f9-f9be-c965bfae0744.htm" />
+  <HelpKINode Title="_readAsBase64Command field" Url="html/7f6aa096-b7d8-b99e-7080-5b9e1c18b57b.htm" />
   <HelpKINode Title="_renderHandle field" Url="html/64965fc9-5029-36a0-5a01-eba274a37ae2.htm" />
   <HelpKINode Title="_setParameters field" Url="html/3b9f0bb1-998f-3480-f204-08968566b824.htm" />
+  <HelpKINode Title="_setPHPContextCommand field" Url="html/cdb9f701-b0c3-be6b-face-0a2e3c2cda3c.htm" />
   <HelpKINode Title="_styles field" Url="html/de65b2cf-5c02-ace2-8301-0fa0c6c0b989.htm" />
   <HelpKINode Title="__construct method" Url="html/122d2bd2-fa24-0d84-b748-9e3a70300525.htm" />
 </HelpKI>
