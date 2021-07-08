@@ -6,9 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Peachpie.Library" Version="1.0.0" />
-    <PackageReference Include="Peachpie.Library.Graphics" Version="1.0.0" />
-    <PackageReference Include="Peachpie.Runtime" Version="1.0.0" />
+    <PackageReference Include="Peachpie.Library" Version="$(PeachpieVersion)" />
+    <PackageReference Include="Peachpie.Library.Graphics" Version="$(PeachpieVersion)" />
+    <PackageReference Include="Peachpie.Runtime" Version="$(PeachpieVersion)" />
   </ItemGroup>
 
   <ItemGroup>

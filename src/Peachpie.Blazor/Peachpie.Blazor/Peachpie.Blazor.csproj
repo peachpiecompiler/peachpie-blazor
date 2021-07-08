@@ -16,17 +16,9 @@
 		<SignAssembly>true</SignAssembly>
 		<AssemblyOriginatorKeyFile>sgKey.snk</AssemblyOriginatorKeyFile>
 		<DelaySign>false</DelaySign>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 	</PropertyGroup>
-	
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-	  <DocumentationFile>E:\OwnCode\Github\Bachelor_thesis\src\Peachpie.Blazor\Peachpie.Blazor\Peachpie.Blazor.xml</DocumentationFile>
-	  <OutputPath></OutputPath>
-	</PropertyGroup>
-	
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-	  <DocumentationFile>E:\OwnCode\Github\Bachelor_thesis\src\Peachpie.Blazor\Peachpie.Blazor\Peachpie.Blazor.xml</DocumentationFile>
-	</PropertyGroup>
-	
+		
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.3" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.Forms" Version="5.0.3" />
@@ -37,7 +29,7 @@
 		<PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
 		<PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="5.0.3" />
 		<PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
-		<PackageReference Include="Peachpie.Runtime" Version="1.0.0-preview5" />
+		<PackageReference Include="Peachpie.Runtime" Version="$(PeachpieVersion)" />
 	</ItemGroup>
 
 	<ItemGroup>
