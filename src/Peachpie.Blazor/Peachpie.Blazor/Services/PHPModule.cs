@@ -79,7 +79,7 @@ namespace Peachpie.Blazor
 
 		public string CreateUrlObject(int id) => _moduleRef.Invoke<string>(_createUrlObjectCommand, id);
 
-		public void DownloadFile(int id) => _moduleRef.InvokeVoid(_downloadFileCommand);
+		public void DownloadFile(int id) => _moduleRef.InvokeVoid(_downloadFileCommand, id);
 
 		public BrowserFile CreateFile(string data, string name, string contentType) => _moduleRef.Invoke<BrowserFile>(_createFileCommand, data, name, contentType);
 		#endregion

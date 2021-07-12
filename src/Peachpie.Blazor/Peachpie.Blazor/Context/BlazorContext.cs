@@ -145,6 +145,12 @@ namespace Peachpie.Blazor
             return _fileManager.GetFileData(id);
         }
 
+        public string CreateUrlObject(int id) => _module.CreateUrlObject(id);
+
+        public BrowserFile CreateFile(string data, string name, string contentType) => _module.CreateFile(data, name, contentType);
+
+        public void DownloadFile(int id) => _module.DownloadFile(id);
+
         #region JSInterop
 
         /// <summary>

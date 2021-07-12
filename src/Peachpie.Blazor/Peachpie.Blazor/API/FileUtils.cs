@@ -1,4 +1,5 @@
 ﻿using Pchp.Core;
+using System;
 
 namespace Peachpie.Blazor
 {
@@ -43,7 +44,7 @@ namespace Peachpie.Blazor
         /// </summary>
         public static string CreateUrlObject(Context ctx, int id)
         {
-            return GenericHelper.CallJs<string>(ctx, JsResource.createUrlObject, id);
+            return (ctx as BlazorContext).CreateUrlObject(id); 
         }
 
         /// <summary>
@@ -51,7 +52,7 @@ namespace Peachpie.Blazor
         /// </summary>
         public static BrowserFile CreateFile(Context ctx, string data, string name, string contentType)
         {
-            return GenericHelper.CallJs<BrowserFile>(ctx, JsResource.createFile, data, name, contentType);
+            return (ctx as BlazorContext).CreateFile(data, name, contentType);
         }
 
         /// <summary>
@@ -61,7 +62,7 @@ namespace Peachpie.Blazor
         /// <param name="id"></param>
         public static void DownloadFile(Context ctx, int id)
         {
-            InteropUtils.CallJsVoid(ctx, JsResource.downloadFile, id);
+            (ctx as BlazorContext).DownloadFile(id);
         }
     }
 }

@@ -71,7 +71,7 @@ export function turnFormsToClientSide() {
 function processFormsData(formData, method) {
     for (var pair of formData.entries()) {
         if (pair[1] instanceof File) {
-            filesData[pair[0]] = files.addFile(pair[1]);
+            filesData[pair[0]] = addFile(pair[1]);
         }
         else {
             if (method == "get") {
@@ -92,7 +92,7 @@ export function getFilesData() {
 
     for (var key in filesData) {
         if (filesData.hasOwnProperty(key)) {
-            let struct = files.createStructure(filesData[key])
+            let struct = createStructure(filesData[key])
             struct["fieldName"] = key;
             result.push(struct);
         }
