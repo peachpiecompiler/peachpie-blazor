@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.JSInterop;
 using Pchp.Core;
 using System;
+using System.Threading.Tasks;
 
 namespace Peachpie.Blazor
 {
@@ -13,13 +14,6 @@ namespace Peachpie.Blazor
     {
         protected Context _ctx;
 
-        [Parameter]
-        public Context Ctx 
-        {
-            get => _ctx;
-            set { _ctx = value; }
-        }
-
         [Inject]
         public IJSRuntime Js { get; set; }
 
@@ -29,12 +23,10 @@ namespace Peachpie.Blazor
         [Inject]
         public IPHPService PhpService { get; set; }
 
-        public virtual void Dispose()
-        {
-            _ctx?.Dispose();
-        }
+		public void Dispose()
+		{}
 
-        protected sealed override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder builder)
+		protected sealed override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder builder)
         {
             base.BuildRenderTree(builder);
             BuildRenderTree(new PhpTreeBuilder(builder, this));
@@ -42,10 +34,11 @@ namespace Peachpie.Blazor
 
         protected abstract void BuildRenderTree(PhpTreeBuilder builder);
 
-        protected override void OnInitialized()
-        {
-            base.OnInitialized();
-            _ctx ??= BlazorContext.Create(Js, LoggerFactory, PhpService);
+		protected override void OnInitialized()
+		{
+			base.OnInitializedAsync();
+            PhpService.InitializePHPModuleAsync().Wait();
+            _ctx = PhpService.GetActualContext() ?? PhpService.CreateNewContext();
         }
     }
 }

@@ -83,7 +83,7 @@ namespace Peachpie.Blazor
         {
             parameters.SetParameterProperties(this);
             
-            await PhpService.InitializePHPAsync();
+            await PhpService.InitializePHPModuleAsync();
             _module = PhpService.GetModule();
 
             Log.SetParameters(_logger, _firstRendering, Type, ContextLifetime);
@@ -91,8 +91,7 @@ namespace Peachpie.Blazor
             if (_firstRendering)
             {
                 _firstRendering = false;
-                _ctx = BlazorContext.Create(this);
-                _module.SetPHPContext(_ctx);
+                _ctx = PhpService.CreateNewContext();
                 Refresh();
             }
         }
@@ -154,7 +153,6 @@ namespace Peachpie.Blazor
                     Log.ComponentNavigation(_logger, ScriptName);
                     _renderHandle.Render((builder) => {
                         builder.OpenComponent(0, result.MatchedRoute.Handler);
-                        builder.AddAttribute(1, "Ctx", _ctx);
                         builder.CloseElement();
                     });
                 }
@@ -180,9 +178,7 @@ namespace Peachpie.Blazor
 
             if (ContextLifetime == SessionLifetime.OnNavigationChanged)
             {
-                _ctx?.Dispose();
-                _ctx = BlazorContext.Create(this);
-                _module.SetPHPContext(_ctx);
+                _ctx = PhpService.CreateNewContext();
             }
 
             Refresh();
@@ -210,7 +206,6 @@ namespace Peachpie.Blazor
             Log.Dispose(_logger);
             _disposed = true;
             NavigationManager.LocationChanged -= OnLocationChanged;
-            _ctx?.Dispose();
         }
         #endregion
     }

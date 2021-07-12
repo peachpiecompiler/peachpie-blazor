@@ -13,6 +13,10 @@ namespace Peachpie.Blazor
 	{
 		public PHPModule GetModule();
 
-		public Task InitializePHPAsync();
+		public BlazorContext GetActualContext();
+
+		public BlazorContext CreateNewContext();
+
+		public Task InitializePHPModuleAsync();
 	}
 }
