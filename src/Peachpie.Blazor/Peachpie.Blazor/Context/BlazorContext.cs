@@ -51,6 +51,8 @@ namespace Peachpie.Blazor
             return ctx;
         }
 
+        public override string ServerApi => "phpwasm";
+
         public static BlazorContext Create(PhpScriptProvider component) => Create(component.Js, component.LoggerFactory, component.PhpService);
         #endregion
 
