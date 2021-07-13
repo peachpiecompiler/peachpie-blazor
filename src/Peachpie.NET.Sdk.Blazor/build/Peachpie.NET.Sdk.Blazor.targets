@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildToolsVersion)' != 'Current'">$(MSBuildAllProjects);$(MsBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(PeachpieVersion)'!='' ">
+    <PackageReference Include="Peachpie.Runtime" Version="$(PeachpieVersion)" />
+    <PackageReference Include="Peachpie.Library" Version="$(PeachpieVersion)" />
+  </ItemGroup>
+
+</Project>
