@@ -23,7 +23,7 @@ namespace Peachpie.Blazor
 			_jsRuntime = jsRuntime;
 			_loggerFactory = loggerFactory;
 			_logger = loggerFactory.CreateLogger<PHPService>();
-			_PHPModuleInitialization = PHPModule.CreateAsync(_jsRuntime).ContinueWith( result => _phpModule = result.IsFaulted ? null : result.Result);
+			_PHPModuleInitialization = PHPModule.CreateAsync(_jsRuntime).ContinueWith( result => { _phpModule = result.IsFaulted ? null : result.Result; });
 		}
 
 		public async Task InitializePHPModuleAsync()
@@ -55,12 +55,10 @@ namespace Peachpie.Blazor
 		{
 			_ctx?.Dispose();
 			_ctx = BlazorContext.Create(_jsRuntime, _loggerFactory, this);
-
 			if (!_PHPModuleInitialization.IsCompleted)
 				throw new Exception("PHP Module is not initialized!");
 			else
 				_phpModule.SetPHPContext(_ctx);
-
 			return _ctx;
 		}
 	}

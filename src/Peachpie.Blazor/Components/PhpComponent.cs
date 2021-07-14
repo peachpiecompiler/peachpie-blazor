@@ -23,10 +23,10 @@ namespace Peachpie.Blazor
         [Inject]
         public IPHPService PhpService { get; set; }
 
-		public void Dispose()
-		{}
+        public void Dispose()
+        { }
 
-		protected sealed override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder builder)
+        protected sealed override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder builder)
         {
             base.BuildRenderTree(builder);
             BuildRenderTree(new PhpTreeBuilder(builder, this));
@@ -34,11 +34,12 @@ namespace Peachpie.Blazor
 
         protected abstract void BuildRenderTree(PhpTreeBuilder builder);
 
-		protected override void OnInitialized()
-		{
-			base.OnInitializedAsync();
-            PhpService.InitializePHPModuleAsync().Wait();
+		public override async Task SetParametersAsync(ParameterView parameters)
+        {
+            parameters.SetParameterProperties(this);
+            await PhpService.InitializePHPModuleAsync();
             _ctx = PhpService.GetActualContext() ?? PhpService.CreateNewContext();
+            await base.SetParametersAsync(ParameterView.Empty);
         }
     }
 }
