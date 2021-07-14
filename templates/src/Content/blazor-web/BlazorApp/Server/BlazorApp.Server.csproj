@@ -8,7 +8,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="5.0.3" />
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="5.0.3" />
-    <PackageReference Include="Peachpie.Blazor" Version="1.0.0-alpha" />
+	<PackageReference Include="Peachpie.Blazor" Version="$(PeachpieBlazorVersion)" />
   </ItemGroup>
 
   <ItemGroup>

@@ -12,7 +12,7 @@ namespace BlazorApp.Client
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
 
             // Configure logging
-            builder.Logging.SetMinimumLevel(LogLevel.Debug); // Debug does not work
+            builder.Logging.SetMinimumLevel(LogLevel.None);
 
             // Add PHP
             builder.AddPhp(new[] { typeof(force).Assembly });
