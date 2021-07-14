@@ -1,0 +1,25 @@
+<Project>
+  <!-- $(PeachpieVersion) property from the current Peachpie.NET.Sdk -->
+  <Import Project="Version.props" Sdk="Peachpie.NET.Sdk" Condition=" '$(PeachpieVersion)'=='' " />
+
+  <PropertyGroup>
+    <!-- common version -->
+    <Version Condition=" '$(Version)'=='' ">1.0.0-dev</Version>
+    <PackageVersion>$(Version)</PackageVersion>
+
+    <!-- metadata generation -->
+    <GenerateAssemblyVersionAttribute>true</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyFileVersionAttribute>true</GenerateAssemblyFileVersionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateNeutralResourcesLanguageAttribute>true</GenerateNeutralResourcesLanguageAttribute>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- signing -->
+    <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)build\StrongKeys\key.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+
+  </PropertyGroup>
+</Project>

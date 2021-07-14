@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  
+    <PropertyGroup>
+        <MSBuildAllProjects Condition="'$(MSBuildToolsVersion)' != 'Current'">$(MSBuildAllProjects);$(MsBuildThisFileFullPath)</MSBuildAllProjects>
+    </PropertyGroup>
+
+    <PropertyGroup>    
+        <TargetFramework>net5.0</TargetFramework>
+        <Configuration Condition=" '$(Configuration)'=='' ">Debug</Configuration>
+        <IsPackable>true</IsPackable>
+        <GeneratePackageOnBuild Condition=" '$(GeneratePackageOnBuild)'=='' ">true</GeneratePackageOnBuild>  
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <DisableImplicitPeachpieReferences>true</DisableImplicitPeachpieReferences>
+    </PropertyGroup>
+
+    <!-- current Peachpie Blazor SDK version -->
+    <Import Project="$(MSBuildThisFileDirectory)Peachpie.Blazor.Version.props" Condition=" '$(PeachpieBlazorVersion)'=='' "/>
+
+</Project>

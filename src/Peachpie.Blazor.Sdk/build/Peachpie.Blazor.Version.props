@@ -1,0 +1,6 @@
+<!-- This file has been generated. -->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<PropertyGroup>
+<PeachpieBlazorVersion Condition=" '$(PeachpieBlazorVersion)'=='' ">1.0.0-dev</PeachpieBlazorVersion>
+</PropertyGroup>
+</Project>

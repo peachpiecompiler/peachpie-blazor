@@ -1,0 +1,29 @@
+﻿<!-- Project Sdk="Peachpie.Blazor.Sdk" -->
+<Project Sdk="Peachpie.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>library</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+  </PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="Peachpie.Library.Graphics" Version="$(PeachpieVersion)" />
+	</ItemGroup>
+
+	<!-- implicitly added by Peachpie.Blazor.Sdk-->
+	<PropertyGroup>
+		<DisableImplicitPeachpieReferences>true</DisableImplicitPeachpieReferences>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="**/*.php" />
+		<Content Include="wwwroot\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\..\Peachpie.Blazor\Peachpie.Blazor.csproj" />
+		<PackageReference Include="Peachpie.Runtime" Version="$(PeachpieVersion)" />
+		<PackageReference Include="Peachpie.Library" Version="$(PeachpieVersion)" />
+	</ItemGroup>
+	<!-- implicitly added by Peachpie.Blazor.Sdk-->
+</Project>

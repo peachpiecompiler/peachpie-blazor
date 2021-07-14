@@ -21,8 +21,7 @@
     <HtmlHelpName>Documentation</HtmlHelpName>
     <Language>en-US</Language>
     <DocumentationSources>
-      <DocumentationSource sourceFile="..\Peachpie.Blazor\Peachpie.Blazor\bin\Debug\net5.0\Peachpie.Blazor.dll" />
-      <DocumentationSource sourceFile="..\Peachpie.Blazor\Peachpie.Blazor\bin\Debug\net5.0\Peachpie.Blazor.xml" />
+      <DocumentationSource sourceFile="..\Peachpie.Blazor\Peachpie.Blazor.csproj" />
     </DocumentationSources>
     <PlugInConfigurations>
       <PlugInConfig id="Assembly Binding Redirection" enabled="True" xmlns="">

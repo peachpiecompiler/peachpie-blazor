@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFrameworks>net5.0</TargetFrameworks>
+		<AssemblyName>Peachpie.Blazor.Sdk</AssemblyName>
+
+        <BuildOutputTargetFolder>build\</BuildOutputTargetFolder>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <!-- generate "Sdk.Common.props" file with current Sdk version -->
+    <Target Name="WriteVersionsProps" BeforeTargets="GenerateNuspec;CollectPackageReferences">
+        <ItemGroup>
+            <_PropsLine Include="&lt;!-- This file has been generated. --&gt;" />
+            <_PropsLine Include="&lt;Project xmlns=&quot;http://schemas.microsoft.com/developer/msbuild/2003&quot;&gt;" />
+            <!-- <Import Project="Sdk.props" Sdk="Peachpie.NET.Sdk" Version="1.0.0" /> -->
+            <_PropsLine Include="&lt;Import Project=&quot;Sdk.props&quot; Sdk=&quot;Peachpie.NET.Sdk&quot; Version=&quot;$(PeachpieVersion)&quot; /&gt;" />
+            <_PropsLine Include="&lt;/Project&gt;" />
+        </ItemGroup>
+        <WriteLinesToFile File="build\Sdk.Common.props" Overwrite="true" Lines="@(_PropsLine)" />
+    </Target>
+
+    <!-- generate "Peachpie.Blazor.Version.props" file -->
+    <Target Name="WritePeachpieBlazorVersionProps" BeforeTargets="GenerateNuspec;CollectPackageReferences">
+	    <ItemGroup>
+			<_PropsLineBlazor Include="&lt;!-- This file has been generated. --&gt;" />
+		    <_PropsLineBlazor Include="&lt;Project xmlns=&quot;http://schemas.microsoft.com/developer/msbuild/2003&quot;&gt;" />
+		    <_PropsLineBlazor Include="&lt;PropertyGroup&gt;" />
+		    <_PropsLineBlazor Include="    &lt;PeachpieBlazorVersion Condition=&quot; '%24(PeachpieBlazorVersion)'=='' &quot;&gt;$(PackageVersion)&lt;/PeachpieBlazorVersion&gt;" />
+		    <_PropsLineBlazor Include="&lt;/PropertyGroup&gt;" />
+		    <_PropsLineBlazor Include="&lt;/Project&gt;" />
+	    </ItemGroup>
+	    <WriteLinesToFile File="build\Peachpie.Blazor.Version.props" Overwrite="true" Lines="@(_PropsLineBlazor)" />
+    </Target>
+
+    <!-- generate "Sdk.Common.targets" file with current Sdk version -->
+    <Target Name="WriteVersionsTargets" BeforeTargets="GenerateNuspec;CollectPackageReferences">
+        <ItemGroup>
+            <_TargetsLine Include="&lt;!-- This file has been generated. --&gt;" />
+            <_TargetsLine Include="&lt;Project xmlns=&quot;http://schemas.microsoft.com/developer/msbuild/2003&quot;&gt;" />
+            <!-- <Import Project="Sdk.targets" Sdk="Peachpie.NET.Sdk" Version="1.0.0" /> -->
+            <_TargetsLine Include="&lt;Import Project=&quot;Sdk.targets&quot; Sdk=&quot;Peachpie.NET.Sdk&quot; Version=&quot;$(PeachpieVersion)&quot; /&gt;" />
+            <_TargetsLine Include="&lt;/Project&gt;" />
+        </ItemGroup>
+        <WriteLinesToFile File="build\Sdk.Common.targets" Overwrite="true" Lines="@(_TargetsLine)" />
+    </Target>
+
+    <ItemGroup>
+        <None Include="build\*" Pack="true" PackagePath="build\" />
+        <None Include="Sdk\*" Pack="true" PackagePath="Sdk\" />
+    </ItemGroup>
+</Project>
