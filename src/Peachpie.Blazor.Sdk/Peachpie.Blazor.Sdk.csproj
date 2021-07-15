@@ -1,10 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>net5.0</TargetFrameworks>
+        <TargetFramework>net5.0</TargetFramework>
 		<AssemblyName>Peachpie.Blazor.Sdk</AssemblyName>
 
         <BuildOutputTargetFolder>build\</BuildOutputTargetFolder>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <NoWarn>NU5128;</NoWarn>
     </PropertyGroup>
 
     <!-- generate "Sdk.Common.props" file with current Sdk version -->
