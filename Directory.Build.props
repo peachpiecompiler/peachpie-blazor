@@ -21,5 +21,7 @@
     <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)build\StrongKeys\key.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
 
+    <NoWarn>$(NoWarn);1591</NoWarn> 
+
   </PropertyGroup>
 </Project>
