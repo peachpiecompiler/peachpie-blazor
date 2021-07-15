@@ -6,7 +6,7 @@ using System;
 namespace Peachpie.Blazor
 {
     /// <summary>
-    /// The class is a wrapper of <see cref="Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder">. It helps to call all Blazor API from PHP.
+    /// The class is a wrapper of <see cref="Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder"/>. It helps to call all Blazor API from PHP.
     /// </summary>
     [PhpType]
     public class PhpTreeBuilder

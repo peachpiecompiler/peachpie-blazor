@@ -17,6 +17,7 @@ namespace Peachpie.Blazor
         /// Writes the content to <see cref="PhpTreeBuilder"/>.
         /// </summary>
         /// <param name="ctx">The <see cref="BlazorContext"/>.</param>
+        /// <param name="builder">Actual builder derived from the original tree builder obtained from the renderer.</param>
         /// <param name="startIndex">The next sequence number used by Blazor diff algorithm.</param>
         /// <returns>Returns the next sequence number after the written content.</returns>
         public int writeWithTreeBuilder(Context ctx, PhpTreeBuilder builder, int startIndex);

@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace Peachpie.Blazor
 {
+	/// <summary>
+	/// Basic implementaion of <see cref="IPHPService"/>.
+	/// </summary>
 	public class PHPService : IPHPService
 	{
 		private readonly IJSRuntime _jsRuntime;
