@@ -11,7 +11,7 @@ This repository contains **Peachpie.Blazor** library and **Peachpie.Blazor.Sdk**
 
 You can see usage demonstration bellow. 
 
-![Demo](.\docs\images\video1.gif)
+<img src=".\docs\images\video1.gif" alt="Demo" style="zoom: 67%;" />
 
 ## Why it is useful ?
 
