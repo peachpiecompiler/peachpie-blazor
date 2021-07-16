@@ -1,6 +1,7 @@
 <h1>
 Blazor plus Peachpie
 </h1>
+
 **PHP as a client side language**
 
 > The library and SDK aren't presented on nuget.org yet. However, if you want to try it already, just compile the **Peachpie.Blazor.Sdk** and **Peachpie.Blazor** and add the nuget paths to NuGet.Config file.
@@ -11,7 +12,7 @@ This repository contains **Peachpie.Blazor** library and **Peachpie.Blazor.Sdk**
 
 You can see the usage demonstration below. 
 
-![Demo](.\docs\images\video1.gif)
+<img src=".\docs\images\video1.gif" alt="Demo" style="zoom: 67%;" />
 
 ## Why is it useful?
 
