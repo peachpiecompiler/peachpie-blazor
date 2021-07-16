@@ -1,0 +1,23 @@
+﻿.asteroids-rocket {
+    background-color: blue;
+    position: absolute;
+}
+
+.asteroids-asteroid {
+    background-color: black;
+    position: absolute;
+}
+
+.asteroids-background {
+    background-color: grey;
+    position: absolute;
+}
+
+.asteroids-bullet {
+    background-color: red;
+    position: absolute;
+}
+
+.asteroids-app {
+    position: relative;
+}

@@ -1,0 +1,16 @@
+﻿@page "/Graph/index.php"
+@page "/Asteroids"
+@using Peachpie.Blazor
+
+<PhpScriptProvider ContextLifetime="@SessionLifetime.Persistant" Type="@PhpScriptProviderType.ScriptProvider">
+    <Navigating>
+        <p>Navigating</p>
+    </Navigating>
+    <NotFound>
+        <p>Not found</p>
+    </NotFound>
+</PhpScriptProvider>
+
+@code {
+
+}

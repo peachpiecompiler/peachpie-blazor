@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Peachpie.Library" Version="$(PeachpieVersion)" />
+    <PackageReference Include="Peachpie.Library.Graphics" Version="$(PeachpieVersion)" />
+    <PackageReference Include="Peachpie.Runtime" Version="$(PeachpieVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PHPScripts\PHPScripts.msbuildproj" />
+  </ItemGroup>
+
+</Project>
