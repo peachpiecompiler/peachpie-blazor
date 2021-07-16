@@ -3,26 +3,26 @@ Blazor plus Peachpie
 </h1>
 **PHP as a client side language**
 
-> The library and SDK aren't presented on nuget.org yet. But if you want to already try it, just compile the **Peachpie.Blazor.Sdk** and **Peachpie.Blazor** and add the nuget paths to NuGet.Config file.
+> The library and SDK aren't presented on nuget.org yet. However, if you want to try it already, just compile the **Peachpie.Blazor.Sdk** and **Peachpie.Blazor** and add the nuget paths to NuGet.Config file.
 
-## What is it ?
+## What is it?
 
-This repository contains **Peachpie.Blazor** library and **Peachpie.Blazor.Sdk** to enable making websites with PHP together with Blazor on a client side. With these components, you can write just PHP script, which are transparently navigated and managed.
+This repository contains **Peachpie.Blazor** library and **Peachpie.Blazor.Sdk** to enable making websites with PHP together with Blazor on a client side. With these components, you can write just PHP scripts, which are transparently navigated and managed.
 
-You can see usage demonstration bellow. 
+You can see the usage demonstration below. 
 
 ![Demo](.\docs\images\video1.gif)
 
-## Why it is useful ?
+## Why is it useful?
 
 There are potential scenarios of usage:
 
-- You want to move a PHP website to a client side for saving server resources.
+- You want to move a PHP website to a client side to save server resources.
 - You have a Blazor website and want to write a part of the website in the PHP language.
-- You want to use PHP libraries on a client side.
-- PHP and Blazor team can work together to make awesome website using .NET and PHP.   
+- You want to use PHP libraries on the client side.
+- PHP and Blazor team can work together to make an awesome website using .NET and PHP.  
 
-## How to get started ?
+## How to get started?
 
 You can start right now.
 
@@ -30,7 +30,7 @@ Steps:
 
 1. Install .NET 5.0 SDK
 2. Install **Peachpie.Blazor.Templates** by ```dotnet new -i "Peachpie.Blazor.Templates::*"```
-3. Choose a template depending on your intention: 
+3. Choose the template based on your intention: 
 
 	- **Peachpie Blazor Web** - A simple PHP website running in browser 
 
@@ -67,14 +67,14 @@ Steps:
 
 There is a rough overview of the possible plans for the future:
 
-- Make rendering with the **PhpScriptProvider** enough efficient in order to remove **PhpComponent** and make the usage even more transparent.
+- Make rendering with the **PhpScriptProvider** efficient enough in order to remove **PhpComponent** and make the usage even more transparent.
 - Figure out the support for databases.
 - Move WordPress to a client side.
 
 ## Documentation
 
-Detailed information about the solution, the library, and the functionality can be found in *docs* folders. Advanced features of the integration are shown there. There can be some missing information about any part of the whole project. If you can ask about something, feel free to contact me and I will add these information to the folder for future interested people. 
+Detailed information about the solution, the library, and the functionality can be found in *docs* folders. Advanced features of the integration are shown there. There can be some missing information about any part of the whole project. If you can ask about something, feel free to contact me, and I will add this information to the folder for future interested people. 
 
 ## Release
 
-This is a first version of the integration. The API and functionality might still change to improve the advantages. The sources compilation should work, feel free to contact me (husaktomas98@google.com) to get more information about this project.
+This is the first version of the integration. The API and functionality might still change to improve the advantages. The sources compilation should work, feel free to contact me ([husaktomas98@google.com](mailto:husaktomas98@google.com)) to get more information about this project.
