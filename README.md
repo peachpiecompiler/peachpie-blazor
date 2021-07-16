@@ -6,6 +6,8 @@ Blazor plus Peachpie
 
 > The library and SDK aren't presented on nuget.org yet. However, if you want to try it already, just compile the **Peachpie.Blazor.Sdk** and **Peachpie.Blazor** and add the nuget paths to NuGet.Config file.
 
+> The documentation is in progress.  You can use ./docs/NeedsToBeChange/thesis.pdf as a source of information about the functionality until the new documentation is not created. However, the text is not actual, and new changes are not presented there. 
+
 ## What is it?
 
 This repository contains **Peachpie.Blazor** library and **Peachpie.Blazor.Sdk** to enable making websites with PHP together with Blazor on a client side. With these components, you can write just PHP scripts, which are transparently navigated and managed.
