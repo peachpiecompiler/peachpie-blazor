@@ -13,7 +13,7 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <DisableImplicitPeachpieReferences>true</DisableImplicitPeachpieReferences>
+        <DisableImplicitPeachpieReferences Condition=" '$(DisableImplicitPeachpieReferences)'=='' ">true</DisableImplicitPeachpieReferences>
     </PropertyGroup>
 
     <!-- current Peachpie Blazor SDK version -->
