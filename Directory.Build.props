@@ -21,7 +21,13 @@
     <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)build\StrongKeys\key.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
 
-    <NoWarn>$(NoWarn);1591</NoWarn> 
+    <NoWarn>$(NoWarn);1591</NoWarn>
+
+    <!--package-->
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/peachpiecompiler/peachpie-blazor</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/peachpiecompiler/peachpie-blazor</PackageProjectUrl>
 
   </PropertyGroup>
 </Project>

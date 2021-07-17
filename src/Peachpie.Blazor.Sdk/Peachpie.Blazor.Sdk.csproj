@@ -2,11 +2,17 @@
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
 		<AssemblyName>Peachpie.Blazor.Sdk</AssemblyName>
-
+        <Description>Project SDK for compiling PHP scripts, which are executed in Blazor.</Description>
         <BuildOutputTargetFolder>build\</BuildOutputTargetFolder>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <NoWarn>NU5128;</NoWarn>
     </PropertyGroup>
+
+    <!--package-->
+	<PropertyGroup>
+		<PackageTags>Peachpie, Blazor, PHP, C#, ASP.NET</PackageTags>
+		<PackageId>Peachpie.Blazor.Sdk</PackageId>
+	</PropertyGroup>
 
     <!-- generate "Sdk.Common.props" file with current Sdk version -->
     <Target Name="WriteVersionsProps" BeforeTargets="GenerateNuspec;CollectPackageReferences">

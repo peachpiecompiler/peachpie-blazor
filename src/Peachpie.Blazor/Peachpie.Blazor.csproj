@@ -3,12 +3,16 @@
 	<PropertyGroup>
 		<TargetFramework>net5.0</TargetFramework>
 		<AssemblyName>Peachpie.Blazor</AssemblyName>
-		<PackageId>Peachpie.Blazor</PackageId>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Description>A library providing integration between Peachpie and Blazor.</Description>
-		<PackageTags>Peachpie, Blazor, PHP, C#, ASP.NET</PackageTags>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<Version>$(PeachpieBlazorVersion)</Version>
+	</PropertyGroup>
+
+	<!--package-->
+	<PropertyGroup>
+		<PackageTags>Peachpie, Blazor, PHP, C#, ASP.NET</PackageTags>
+		<PackageId>Peachpie.Blazor</PackageId>
 	</PropertyGroup>
 			
 	<ItemGroup>
