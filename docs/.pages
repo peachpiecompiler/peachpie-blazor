@@ -1,0 +1,8 @@
+arrange:
+  - overview.md
+  - navigation.md
+  - rendering.md
+  - forms.md
+  - context-lifetime.md
+  - php-js-interoperability.md
+  - api-reference.md
