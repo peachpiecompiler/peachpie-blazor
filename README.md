@@ -1,6 +1,7 @@
 <h1>
 Blazor plus Peachpie
 </h1>
+
 **PHP as a client side language**
 
 > The documentation is in progress.  You can use ./docs/NeedsToBeChange/thesis.pdf as a source of information about the functionality until the new documentation is not created. However, the text is not actual, and new changes are not presented there. 
