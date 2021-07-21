@@ -1,12 +1,14 @@
 <h1>
 Blazor plus Peachpie
 </h1>
-
 **PHP as a client side language**
 
-> The library and SDK aren't presented on nuget.org yet. However, if you want to try it already, just compile the **Peachpie.Blazor.Sdk** and **Peachpie.Blazor** and add the nuget paths to NuGet.Config file.
-
 > The documentation is in progress.  You can use ./docs/NeedsToBeChange/thesis.pdf as a source of information about the functionality until the new documentation is not created. However, the text is not actual, and new changes are not presented there. 
+
+<p align="center">
+<a href="https://www.nuget.org/packages/Peachpie.Blazor.Sdk/"><img src="https://img.shields.io/nuget/v/Peachpie.Blazor.Sdk.svg?style=flat"></a>
+<a href="https://docs.peachpie.io/scenarios/blazor/overview/"><img src="https://img.shields.io/badge/docs-peachpie.blazor.io-green.svg"></a> 
+</p>
 
 ## What is it?
 
@@ -27,28 +29,22 @@ There are potential scenarios of usage:
 
 ## How to get started?
 
+> At the time of writing, the blazor templates are not a part of Peachpie.Templates yet. But you can still compile it from ./templates folder by following the instruction inside the folder and then continue here. 
+
 You can start right now.
 
 Steps:
 
-1. Install .NET 5.0 SDK
-2. Install **Peachpie.Blazor.Templates** by ```dotnet new -i "Peachpie.Blazor.Templates::*"```
-3. Choose the template based on your intention: 
+1. Install **Peachpie.Templates** by `dotnet new -i "Peachpie.Templates::*"`
+2. Choose the template based on your intention:
+   - **blazor-hybrid**- A simple PHP website running in browser
+   - **blazor-web** - A simple Blazor website combining PHP and Razor Pages
+3. Create the project by `dotnet new project-name`
+4. Add Razor pages to **BlazorApp.Client** or PHP scripts to **PHPScripts** (Optional)
+5. Launch the **Blazor.Server** by `dotnet run --project BlazorApp\Server`
+6. Access [https://localhost:5001](https://localhost:5001/)
 
-	- **Peachpie Blazor Web** - A simple PHP website running in browser 
-
-	- **Peachpie Blazor Hybrid** - A simple Blazor website combining PHP and Razor Pages
-
-
-4. Create the project by ```dotnet new project-name```
-
-5. Add Razor pages to **BlazorApp.Client** or PHP scripts to **PHPScripts** (Optional)
-
-6. Launch the **Blazor.Server** by navigating to its folder and run ```dotnet run```
-
-7. Access https://localhost:5001
-
-<img src=".\docs\images\Structure.png" alt="Solution structure" style="zoom: 67%;" />
+<img src=".\docs\images\Structure.png" alt="Solution structure" style="zoom: 60%;" />
 
 ## Features
 
