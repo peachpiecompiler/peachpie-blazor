@@ -4,8 +4,6 @@ Blazor plus Peachpie
 
 **PHP as a client side language**
 
-> The documentation is in progress.  You can use ./docs/NeedsToBeChange/thesis.pdf as a source of information about the functionality until the new documentation is not created. However, the text is not actual, and new changes are not presented there. 
-
 <p align="center">
 <a href="https://www.nuget.org/packages/Peachpie.Blazor.Sdk/"><img src="https://img.shields.io/nuget/v/Peachpie.Blazor.Sdk.svg?style=flat"></a>
 <a href="https://docs.peachpie.io/scenarios/blazor/overview/"><img src="https://img.shields.io/badge/docs-peachpie.blazor.io-green.svg"></a> 
@@ -29,8 +27,6 @@ There are potential scenarios of usage:
 - PHP and Blazor team can work together to make an awesome website using .NET and PHP.  
 
 ## How to get started?
-
-> At the time of writing, the blazor templates are not a part of Peachpie.Templates yet. But you can still compile it from ./templates folder by following the instruction inside the folder and then continue here. 
 
 You can start right now.
 
