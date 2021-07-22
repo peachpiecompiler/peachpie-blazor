@@ -1,6 +1,6 @@
 arrange:
   - overview.md
-  - inserting-php-scripts
+  - inserting-php-scripts.md
   - forms.md
   - context-lifetime.md
   - php-js-interoperability.md
