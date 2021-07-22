@@ -91,7 +91,7 @@ The provider finds PHP scripts by their relative paths to the project folder. So
 		<p>Navigating</p>     
 	</Navigating>         
 	<NotFound>            
-		<p>Script not found</p
+		<p>Script not found</p>
 	</NotFound>           
 </PhpScriptProvider>
 
@@ -115,7 +115,7 @@ So, when we want to navigate all scripts contained in the `folder1` folder of `P
 		<p>Navigating</p>     
 	</Navigating>         
 	<NotFound>            
-		<p>Script not found</p
+		<p>Script not found</p>
 	</NotFound>           
 </PhpScriptProvider>
 
