@@ -30,6 +30,8 @@ There are potential scenarios of usage:
 
 ## How to get started?
 
+> At the time of writing, the blazor templates are not a part of Peachpie.Templates yet. But you can still compile it from ./templates folder by following the instruction inside the folder and then continue here. 
+
 You can start right now.
 
 Steps:
