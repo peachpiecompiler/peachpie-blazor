@@ -74,7 +74,7 @@ We have two options for how to insert PHP content into a Blazor web application.
 
 Thanks to `IComponent` interface, we can insert `PhpScriptProvider` into Razor page as a normal Blazor component. We can configure a set of PHP scripts, which we want to be executed. The most simple configuration is to navigate just one script by the class. 
 
-The provider finds PHP scripts by their relative paths to the project folder. So, when we have `https://[server]/folder1/folder2/file.php` URL, the provider tries to find the script with a relative path `folder1/folder2/file.php` to the Peachpie project.   
+The provider finds PHP scripts by their relative paths to the project folder. So, when we have `https://[server]/folder1/folder2/file.php` URL, the provider tries to find the script with a relative path `folder1/folder2/file.php` to the Peachpie project. Superglobal `$_GET` works as you expect.
 
 ##### Navigating only one PHP script 
 
