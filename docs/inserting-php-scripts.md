@@ -6,11 +6,11 @@ Before we will start to talk about using classes provided by `Peachpie.Blazor`, 
 
 Create a standard Blazor WebAssembly application (with .NET 5) and tick ASP.NET Core hosted.
 
-![VS dialog](.\images\creating-web-assembly.png)
+![VS dialog](./images/creating-web-assembly.png)
 
 We have to add a package reference for `Peachpie.Blazor` library to `BlazorApp.Client` and `BlazorApp.Server` projects in order to be able to use helper classes providing script navigation and execution.
 
-![Nuget](.\images\nuget.png)
+![Nuget](./images/nuget.png)
 
 Now, we have to add support for PHP in the `WebAssemblyHost` of `BlazorApp.Client` project. Because of Blazor specification, we have to add reference on a type defined in the additional assembly in order to make the assembly be downloaded with the `BlazorApp.Client`. 
 
@@ -175,4 +175,4 @@ For those, whose are familiar with Blazor, the code above should be understandab
 
 At first glance, this way of adding PHP to Blazor can be considered difficult to use, but it enables utilizing a smart diffing algorithm during rendering. Hence, we can also create render-demanding applications like games by using this way. There is an [example](https://github.com/peachpiecompiler/peachpie-blazor/tree/dev/docs/src/Tests/Examples/WebGame) of a simple Asteroids-like game, which is fully implemented by PHP and executed as a client-side application. We can see a screenshot from this game below. 
 
-![Screenshot](.\images\asteroids.png)
+![Screenshot](./images/asteroids.png)
