@@ -23,7 +23,7 @@ Integration of Blazor and PeachPie enables executing PHP scripts on a client sid
 
 You can see a simple PHP web application, which is created as a Peachpie project and downloaded to a client by only one initial request below. The next navigation in the website is offline, using the Blazor environment.
 
-<img src=".\images\video1.gif" alt="Demo" style="zoom: 67%;" />
+![Demo](.\images\video1.gif)
 
 ## Remarks
 
