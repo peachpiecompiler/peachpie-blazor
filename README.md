@@ -1,13 +1,16 @@
 <h1>
-Blazor plus Peachpie
+PHP Tools for Blazor
 </h1>
+
 
 **PHP as a client side language**
 
 <p align="center">
 <a href="https://www.nuget.org/packages/Peachpie.Blazor.Sdk/"><img src="https://img.shields.io/nuget/v/Peachpie.Blazor.Sdk.svg?style=flat"></a>
 <a href="https://docs.peachpie.io/scenarios/blazor/overview/"><img src="https://img.shields.io/badge/docs-peachpie.blazor.io-green.svg"></a> 
+<a href="https://docs.peachpie.io/scenarios/blazor/overview/"><img src="https://img.shields.io/badge/license-MIT-blue"></a>
 </p>
+
 
 ## What is it?
 
