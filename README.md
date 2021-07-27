@@ -76,4 +76,4 @@ Detailed information about the solution, the library, and the functionality can 
 
 ## Release
 
-This is the first version of the integration. The API and functionality might still change to improve the advantages. The sources compilation should work, feel free to contact me ([husaktomas98@google.com](mailto:husaktomas98@google.com)) to get more information about this project.
+This is the first version of the integration. The API and functionality might still change to improve the advantages. The sources compilation should work, feel free to contact me ([husaktomas98@gmail.com](mailto:husaktomas98@google.com)) to get more information about this project.
