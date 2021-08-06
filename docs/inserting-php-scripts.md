@@ -80,7 +80,7 @@ The provider finds PHP scripts by their relative paths to the project folder. So
 
 > *`Index.razor`:*
 
-```razor
+```html
 @page "/index.php"
 @using Peachpie.Blazor
 
@@ -106,7 +106,7 @@ When we want to navigate more PHP scripts, we just change the `Type` parameter o
 
 So, when we want to navigate all scripts contained in the `folder1` folder of `PHPScripts` project, we just add the following Razor page to the `BlazorApp.Client` project:
 
-```razor
+```html
 @page "/folder1/{*sth}"
 @using Peachpie.Blazor
 

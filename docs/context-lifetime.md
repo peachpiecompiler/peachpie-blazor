@@ -8,7 +8,7 @@ You will change the context lifetime of the provider by setting the `ContextLife
 
 > The current implementation doesn't support more than one context at a time. So when there are two instances of the provider with different `ContextLifetime`, the context persistency will not work.
 
-```razor
+```html
 <PhpScriptProvider ContextLifetime="@SessionLifetime.Persistant" Type="@PhpScriptProviderType.ScriptProvider">
     <Navigating>
         <p>Navigating</p>

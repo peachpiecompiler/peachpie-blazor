@@ -29,6 +29,8 @@ Then you can download an already existing file by `DownloadFile($fileId)`, which
 You can see an example of creating a CSV file and downloading it to a client below.
 
 ```php
+<?php
+
 $file = CreateFile('Hello, world',"text/csv", "graph.csv");
 DownloadFile($file->id);
 ```

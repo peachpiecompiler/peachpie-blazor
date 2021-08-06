@@ -11,6 +11,8 @@ This section picks useful classes and methods up, which are used to provide PHP 
 This class can be inherited in a script to provide Blazor component API in PHP. Every output initiated by echo or similar functions is copied into a browser console. The virtual method of the Blazor component can be freely overridden. The inherited class has to implement the ```BuildRenderTree``` method. It generates the page content using ```PhpTreeBuilder```, which is a wrapper of the original ```RenderTreeBuilder``` and provides adjusted API for PHP use. 
 
 ```php
+<?php
+
 #[\Microsoft\AspNetCore\Components\RouteAttribute("/Asteroids")]
 class AsteroidsComponent extends \Peachpie\Blazor\PhpComponent
 {  
@@ -26,6 +28,8 @@ class AsteroidsComponent extends \Peachpie\Blazor\PhpComponent
 The library provides a collection of helper classes representing HTML entities because ```RenderTreeBuilder```, used in Blazor, is complicated for writing an HTML page. You can see an example of usage in the figure below.
 
 ```php
+<?php
+
 $button= new \Peachpie\Blazor\Tag("button");
 $button->attributes["style"]["position"] = "absolute";
 $button->attributes["style"]["top"] = "700px";
