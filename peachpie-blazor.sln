@@ -69,6 +69,35 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp.Server", "src\Tes
 EndProject
 Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "Blazor.Peachpie.Docs", "src\SandCastleDocumentation\Blazor.Peachpie.Docs.shfbproj", "{3D12F924-DDE2-4732-86BF-FB1F7298F099}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{097EEB50-1F50-4AF8-97A8-CB0D650638AF}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		global.json = global.json
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{5B6A94CA-E553-4400-950F-E020FAC6C438}"
+	ProjectSection(SolutionItems) = preProject
+		docs\.pages = docs\.pages
+		docs\api-reference.md = docs\api-reference.md
+		docs\context-lifetime.md = docs\context-lifetime.md
+		docs\forms.md = docs\forms.md
+		docs\inserting-php-scripts.md = docs\inserting-php-scripts.md
+		docs\overview.md = docs\overview.md
+		docs\php-js-interoperability.md = docs\php-js-interoperability.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{71D0C9BD-99C3-48F6-A1DD-0469ED2BBFDE}"
+	ProjectSection(SolutionItems) = preProject
+		docs\images\asteroids.png = docs\images\asteroids.png
+		docs\images\creating-web-assembly.png = docs\images\creating-web-assembly.png
+		docs\images\nuget.png = docs\images\nuget.png
+		docs\images\Structure.png = docs\images\Structure.png
+		docs\images\video1.gif = docs\images\video1.gif
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -205,6 +234,8 @@ Global
 		{27C3EFF8-70DF-44CC-8CD3-78D3F5D2F242} = {276F6016-0E55-4EDA-933E-05A767C93AE4}
 		{C30D345F-0A55-4DC3-B92C-9EBA94D70972} = {276F6016-0E55-4EDA-933E-05A767C93AE4}
 		{B94A0191-154B-4C12-B7D8-B07E41FF2B2E} = {276F6016-0E55-4EDA-933E-05A767C93AE4}
+		{5B6A94CA-E553-4400-950F-E020FAC6C438} = {097EEB50-1F50-4AF8-97A8-CB0D650638AF}
+		{71D0C9BD-99C3-48F6-A1DD-0469ED2BBFDE} = {5B6A94CA-E553-4400-950F-E020FAC6C438}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0654DC26-FF69-431D-8BF7-1E25E3A3D155}
