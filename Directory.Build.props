@@ -28,6 +28,6 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/peachpiecompiler/peachpie-blazor</RepositoryUrl>
     <PackageProjectUrl>https://github.com/peachpiecompiler/peachpie-blazor</PackageProjectUrl>
-
+    <Authors>tomashusak</Authors>
   </PropertyGroup>
 </Project>
