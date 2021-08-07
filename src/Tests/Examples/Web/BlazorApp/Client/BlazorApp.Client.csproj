@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>   
-    <ProjectReference Include="..\..\..\..\..\Peachpie.Blazor\Peachpie.Blazor.csproj" />
+    <ProjectReference Include="$(SolutionDir)\src\Peachpie.Blazor\Peachpie.Blazor.csproj" />
     <ProjectReference Include="..\..\PHPScripts\PHPScripts.msbuildproj" />
   </ItemGroup>
 

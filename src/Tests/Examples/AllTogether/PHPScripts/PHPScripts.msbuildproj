@@ -1,25 +1,27 @@
-﻿<!-- Project Sdk="Peachpie.Blazor.Sdk" -->
-<Project Sdk="Peachpie.NET.Sdk">
-  <PropertyGroup>
-    <OutputType>library</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
-    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
-  </PropertyGroup>
+﻿<!-- To make the functionality more transparent, we are using imports, which uses local build of Peachpie.Blazor.Sdk.
+     The normal usage is to write just <Project Sdk="Peachpie.Blazor.Sdk"> without marked items below. -->
+<Project>
 
-	<!-- implicitly added by Peachpie.Blazor.Sdk-->
+	<!-- BEGIN added because of referencing local sdk-->
 	<PropertyGroup>
-		<DisableImplicitPeachpieReferences>true</DisableImplicitPeachpieReferences>
+		<DisableImplicitPeachpieBlazorReferences>true</DisableImplicitPeachpieBlazorReferences>
 	</PropertyGroup>
 
+	<Import Project="$(SolutionDir)src\Peachpie.Blazor.Sdk\Sdk\Sdk.props" />
+	<!-- END added because of referencing local sdk-->
+
+	<PropertyGroup>
+		<OutputType>library</OutputType>
+		<TargetFramework>net5.0</TargetFramework>
+		<ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+	</PropertyGroup>
+
+	<!-- BEGIN added because of referencing local sdk-->
 	<ItemGroup>
-		<Compile Include="**/*.php" />
-		<Content Include="wwwroot\**" />
+		<ProjectReference Include="$(SolutionDir)\src\Peachpie.Blazor\Peachpie.Blazor.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-		<ProjectReference Include="..\..\..\..\Peachpie.Blazor\Peachpie.Blazor.csproj" />
-		<PackageReference Include="Peachpie.Runtime" Version="$(PeachpieVersion)" />
-		<PackageReference Include="Peachpie.Library" Version="$(PeachpieVersion)" />
-	</ItemGroup>
-	<!-- implicitly added by Peachpie.Blazor.Sdk-->
+	<Import Project="$(SolutionDir)src\Peachpie.Blazor.Sdk\Sdk\Sdk.targets" />
+	<!-- END added because of referencing local sdk-->
+
 </Project>

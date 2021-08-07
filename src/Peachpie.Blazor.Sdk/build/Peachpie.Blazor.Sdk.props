@@ -12,9 +12,15 @@
         <GeneratePackageOnBuild Condition=" '$(GeneratePackageOnBuild)'=='' ">true</GeneratePackageOnBuild>  
     </PropertyGroup>
 
+	<!-- remove PeachPie libraries-->
     <PropertyGroup>
         <DisableImplicitPeachpieReferences Condition=" '$(DisableImplicitPeachpieReferences)'=='' ">true</DisableImplicitPeachpieReferences>
     </PropertyGroup>
+
+	<!-- enable debugging php in Blazor-->
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DebugType>embedded</DebugType>
+	</PropertyGroup>
 
     <!-- current Peachpie Blazor SDK version -->
     <Import Project="$(MSBuildThisFileDirectory)Peachpie.Blazor.Version.props" Condition=" '$(PeachpieBlazorVersion)'=='' "/>
