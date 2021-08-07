@@ -18,8 +18,8 @@ namespace BlazorApp.Client
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("#app");
 
-            // Configure logging
-            builder.Logging.SetMinimumLevel(LogLevel.None); // Debug does not work
+            // uncomment to remove logging
+            // builder.Logging.SetMinimumLevel(LogLevel.None);
 
             builder.AddPhp(new[] { typeof(Asteroids.AsteroidsComponent).Assembly });
 

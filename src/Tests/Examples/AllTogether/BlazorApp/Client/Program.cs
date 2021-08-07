@@ -17,7 +17,9 @@ namespace BlazorApp.Client
         {
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("#app");
-            builder.Logging.SetMinimumLevel(LogLevel.None);
+
+            // uncomment to remove logging
+            // builder.Logging.SetMinimumLevel(LogLevel.None);
 
             // Add PHP
             builder.AddPhp(new[] { typeof(force).Assembly });
