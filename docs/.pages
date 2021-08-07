@@ -4,4 +4,5 @@ arrange:
   - forms.md
   - context-lifetime.md
   - php-js-interoperability.md
+  - debugging.md
   - api-reference.md
