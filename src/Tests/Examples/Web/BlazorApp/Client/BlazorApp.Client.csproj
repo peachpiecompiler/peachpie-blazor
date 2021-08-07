@@ -15,4 +15,11 @@
     <ProjectReference Include="..\..\PHPScripts\PHPScripts.msbuildproj" />
   </ItemGroup>
 
+	<ItemGroup>
+		<None Include="..\..\PHPScripts\wwwroot\**\*">
+			<Link>wwwroot\%(RecursiveDir)/%(FileName)%(Extension)</Link>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
 </Project>

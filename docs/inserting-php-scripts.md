@@ -176,3 +176,7 @@ For those, whose are familiar with Blazor, the code above should be understandab
 At first glance, this way of adding PHP to Blazor can be considered difficult to use, but it enables utilizing a smart diffing algorithm during rendering. Hence, we can also create render-demanding applications like games by using this way. There is an [example](https://github.com/peachpiecompiler/peachpie-blazor/tree/dev/docs/src/Tests/Examples/WebGame) of a simple Asteroids-like game, which is fully implemented by PHP and executed as a client-side application. We can see a screenshot from this game below. 
 
 ![Screenshot](./images/asteroids.png)
+
+## Static files serving
+
+TODO

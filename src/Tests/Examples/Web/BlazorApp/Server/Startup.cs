@@ -41,8 +41,6 @@ namespace BlazorApp.Server
             app.UseBlazorFrameworkFiles();
             app.UseStaticFiles();
 
-            app.UseAdditionalWebStaticAssets(Configuration);
-
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
