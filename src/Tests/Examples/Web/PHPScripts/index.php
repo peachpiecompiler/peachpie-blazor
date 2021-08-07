@@ -26,7 +26,7 @@ public static async Task Main(string[] args)
 <h3>Offline</h3>
 <p>You can try the offline mode by disabling it in the developer tools.</p>
 <p>You can navigate through the website, but external resources (like images) can not be loaded in offline mode.</p>
-<img src="Web/images/offlineMode.png" width="600" height="200"/>
+<img src="images/offlineMode.png" width="600" height="200"/>
 
 <?php
     require("/footers/defaultFooter.php");
