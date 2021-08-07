@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-	  <ProjectReference Include="..\..\..\..\..\Peachpie.Blazor\Peachpie.Blazor.csproj" />
+	  <ProjectReference Include="$(SolutionDir)\src\Peachpie.Blazor\Peachpie.Blazor.csproj" />
     <ProjectReference Include="..\Client\BlazorApp.Client.csproj" />
   </ItemGroup>
 
