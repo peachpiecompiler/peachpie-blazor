@@ -186,7 +186,7 @@ Blazor enables serving static files by saving them into `wwwroot` folder in `Bla
 ```php
 <?php
 
-<img alt="img" src "img\img.jpg"/>
+<img alt="img" src="img\img.jpg"/>
 ```
 
 However, the static files only used by PHP scripts should be contained in the project as well due to make the project clear. `Peachpie.Blazor` offers two options for how to reference these static files.
@@ -234,8 +234,7 @@ namespace BlazorApp.Server
 ```
 
 The following configuration means serving files from `..\\..\\PHPScripts\\wwwroot` to the client. They have a root path `_content\PHPScripts`.  
-
-> So for example, when we have an image `img.jpg` placed in `PHPScripts\wwwroot\img\img.jpg`, we display it by <img alt="img" src="_content\PHPScripts\img\img.jpg">  
+> So for example, when we have an image `img.jpg` placed in `PHPScripts\wwwroot\img\img.jpg`, we display it by `<img alt="img" src="_content\PHPScripts\img\img.jpg">`
 
 >appsettings.json:
 
