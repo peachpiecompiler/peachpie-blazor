@@ -10,7 +10,7 @@ Integration of Blazor and PeachPie enables executing PHP scripts on a client sid
 
 1. Install **Peachpie.Templates** by `dotnet new -i "Peachpie.Templates::*"`
 2. Choose the template based on your intention:
-   - **phpwasm**- A simple PHP website running in browser
+   - **phpwasm** - A simple PHP website running in browser
    - **blazorwasm** - A simple Blazor website combining PHP and Razor Pages
 3. Create the project by `dotnet new [project-name] -lang PHP`
 4. Add Razor pages to **BlazorApp.Client** or PHP scripts to **PHPScripts** (Optional)
