@@ -179,4 +179,73 @@ At first glance, this way of adding PHP to Blazor can be considered difficult to
 
 ## Static files serving
 
-TODO
+Blazor enables serving static files by saving them into `wwwroot` folder in `BlazorApp.Client` project. All files stored in the folder are accessible from PHP scripts as well.
+
+>For example, when an image `img.jpg` has path `wwwroot\img\img.jpg`. We can render this image in PHP scripts by the code below.
+
+```php
+<?php
+
+<img alt="img" src "img\img.jpg"/>
+```
+
+However, the static files only used by PHP scripts should be contained in the project as well due to make the project clear. `Peachpie.Blazor` offers two options for how to reference these static files.
+
+### wwwroot linking
+
+The first option is to link a folder containing static files to the `BlazorApp.Client` project. It can be done by adding the following code into *.csproj*. We assume having the folder `wwwroot` containing the additional static files in `PHPScripts` project.
+
+> BlazorApp.Client.csproj:
+
+```xml
+...
+<ItemGroup>
+	<None Include="..\..\PHPScripts\wwwroot\**\*">
+		<Link>wwwroot\%(RecursiveDir)/%(FileName)%(Extension)</Link>
+		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	</None>
+</ItemGroup>
+...
+```
+
+### appsettings.json
+
+The second option is utilizing custom ASP.NET Core middleware provided by `Peachpie.Blazor`. When you add the `app.UseAdditionalWebStaticAssets` method into `StartUp` class of server, you will be able to specify folder(s), which should be accessible from the client.
+
+```C#
+namespace BlazorApp.Server
+{
+    public class Startup
+    {
+        public IConfiguration Configuration { get; }
+
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+			...
+            app.UseBlazorFrameworkFiles();
+            app.UseStaticFiles();
+
+            app.UseAdditionalWebStaticAssets(Configuration);
+
+            app.UseRouting();
+			...
+        }
+    }
+}
+```
+
+The following configuration means serving files from `..\\..\\PHPScripts\\wwwroot` to the client. They have a root path `_content\PHPScripts`.  
+
+> So for example, when we have an image `img.jpg` placed in `PHPScripts\wwwroot\img\img.jpg`, we display it by <img alt="img" src="_content\PHPScripts\img\img.jpg">  
+
+>appsettings.json:
+
+```json
+{
+  "AdditionalStaticWebAssets": [
+    {
+      "Path": "..\\..\\PHPScripts\\wwwroot",
+      "BasePath": "/PHPScripts"
+    }
+  ]
+}
+```
