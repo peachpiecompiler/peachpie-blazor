@@ -37,9 +37,9 @@ Steps:
 
 1. Install **Peachpie.Templates** by `dotnet new -i "Peachpie.Templates::*"`
 2. Choose the template based on your intention:
-   - **blazor-hybrid**- A simple PHP website running in browser
-   - **blazor-web** - A simple Blazor website combining PHP and Razor Pages
-3. Create the project by `dotnet new project-name`
+   - **phpwasm** - A simple PHP website running in browser
+   - **blazorwasm** - A simple Blazor website combining PHP and Razor Pages
+3. Create the project by `dotnet new project-name -lang PHP`
 4. Add Razor pages to **BlazorApp.Client** or PHP scripts to **PHPScripts** (Optional)
 5. Launch the **Blazor.Server** by `dotnet run --project BlazorApp\Server`
 6. Access [https://localhost:5001](https://localhost:5001/)
