@@ -6,6 +6,7 @@
     <!-- common version -->
     <Version Condition=" '$(Version)'=='' ">1.0.0-dev</Version>
     <PackageVersion>$(Version)</PackageVersion>
+	<TargetFramework>net6.0</TargetFramework>
 
     <!-- metadata generation -->
     <GenerateAssemblyVersionAttribute>true</GenerateAssemblyVersionAttribute>

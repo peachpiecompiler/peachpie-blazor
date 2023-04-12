@@ -56,7 +56,7 @@ Add a new PeachPie project, where we will have our PHP scripts.
 <Project Sdk="Peachpie.Blazor.Sdk/1.0.11936">
  <PropertyGroup>
     <OutputType>library</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
   </PropertyGroup>
 </Project>

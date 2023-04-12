@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net5.0</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
 		<AssemblyName>Peachpie.Blazor.Sdk</AssemblyName>
         <Description>Project SDK for compiling PHP scripts, which are executed in Blazor.</Description>
         <BuildOutputTargetFolder>build\</BuildOutputTargetFolder>
